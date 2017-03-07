@@ -1,0 +1,14 @@
+{
+  "name": "wispace",
+  "version": "1.0.0",
+  "description": "andong",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xlee",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-uglify": "^2.0.1"
+  }
+}
