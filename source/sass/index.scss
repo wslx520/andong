@@ -1,0 +1,152 @@
+@import "base";
+@import "common";
+
+.head-nav {
+	height: 122px;
+	background-color: #161312;
+	.logo {
+		/*float: left;*/
+		display: inline-block;
+		margin:auto 40px;
+	}
+	.nav-list {
+		/*float: left;*/
+		height: 100%;
+		display: inline-block;
+		font-size: 0;
+		ul {
+			height: 100%;
+		}
+		li {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			line-height: 122px;
+			padding: 0 29px;
+		}
+		a {
+			color: #ccc;
+			font-size: 16px;
+			line-height: 1;
+			text-align: center;
+		}
+		li.active a {
+			color: #fff;
+		}
+	}
+	.info {
+		float: right;
+		font-size: 0;
+		color: #fff;
+		height: 122px;
+		/*width: 340px;*/
+		.vm {
+			display: block;
+			height: 100%;
+			line-height: 1;
+		}
+		.locate {
+			font-size: 12px;
+			line-height: 1;
+		}
+		.line, .city, .login {
+			font-size: 14px;
+			line-height: 1;
+		}
+		.line {
+			margin: 0 8px;
+		}
+		.login {
+			height: 32px;
+			line-height: 32px;
+			width: 130px;
+			border: 1px solid #4e4d4d;
+			color: #999;
+			text-align: center;
+			display: inline-block;
+			margin: 0 30px 0 25px;
+		}
+	}
+}
+.banners {
+	position: relative;
+	.pics {
+		li, img {
+			display: block;
+		}
+	}
+	.nav {
+		position: absolute;
+		top: 50%;
+		width: 52px;
+		height: 100px;
+		margin-top: -50px;
+		opacity: 0.8;
+		background-color: #161312;
+		line-height: 100px;
+		text-align: center;
+		display: block;
+		&.left {
+			left: 30px;
+		}
+		&.right {
+			right: 30px;
+		}
+	}
+	.pager {
+		background-color: #161312;
+		opacity: 0.8;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		font-size: 0;
+		padding: 9px 15px;
+		li {
+			display: inline-block;
+			background-color: #fff;
+			width: 9px;
+			height: 9px;
+			margin: 0 5px;
+			border-radius: 50%;
+			&.current {
+				background-color: #fabe00;
+			}
+		}
+	}
+}
+
+.center-title {
+	padding-top: 72px;
+	text-align: center;
+	h2, h4 {
+		font-weight: 400;
+		margin: 0;
+		color: #221815;
+		line-height: 1;
+	}
+	h2 {
+		margin-bottom: 36px;
+		font-size: 36px;
+	}
+	h4 {
+		font-size: 16px;
+		margin-bottom: 36px;
+	}
+}
+
+.changjing {
+	position: relative;
+	font-size: 0;
+	.pic {
+		display: inline-block;
+		width: 50%;
+		overflow: hidden;
+		padding: 18px 27px;
+		img {
+			/*margin: 27px 18px;*/
+		}
+		
+
+	}
+}
+@import "icons";

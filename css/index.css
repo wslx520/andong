@@ -1,0 +1,210 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+em, i {
+  font-style: normal; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+  ul li, ol li {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+
+img {
+  border: none;
+  max-width: 100%;
+  margin: auto; }
+
+.vm {
+  /*display: inline-block;*/
+  vertical-align: middle;
+  position: relative; }
+  .vm:before {
+    content: '';
+    height: 100%;
+    width: 0;
+    font-size: 0;
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block; }
+  .vm > * {
+    vertical-align: middle; }
+
+body {
+  background-color: #fff; }
+
+.clear {
+  *zoom: 1; }
+  .clear:after {
+    content: '';
+    display: table;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0; }
+
+.head-nav {
+  height: 122px;
+  background-color: #161312; }
+  .head-nav .logo {
+    /*float: left;*/
+    display: inline-block;
+    margin: auto 40px; }
+  .head-nav .nav-list {
+    /*float: left;*/
+    height: 100%;
+    display: inline-block;
+    font-size: 0; }
+    .head-nav .nav-list ul {
+      height: 100%; }
+    .head-nav .nav-list li {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      line-height: 122px;
+      padding: 0 29px; }
+    .head-nav .nav-list a {
+      color: #ccc;
+      font-size: 16px;
+      line-height: 1;
+      text-align: center; }
+    .head-nav .nav-list li.active a {
+      color: #fff; }
+  .head-nav .info {
+    float: right;
+    font-size: 0;
+    color: #fff;
+    height: 122px;
+    /*width: 340px;*/ }
+    .head-nav .info .vm {
+      display: block;
+      height: 100%;
+      line-height: 1; }
+    .head-nav .info .locate {
+      font-size: 12px;
+      line-height: 1; }
+    .head-nav .info .line, .head-nav .info .city, .head-nav .info .login {
+      font-size: 14px;
+      line-height: 1; }
+    .head-nav .info .line {
+      margin: 0 8px; }
+    .head-nav .info .login {
+      height: 32px;
+      line-height: 32px;
+      width: 130px;
+      border: 1px solid #4e4d4d;
+      color: #999;
+      text-align: center;
+      display: inline-block;
+      margin: 0 30px 0 25px; }
+
+.banners {
+  position: relative; }
+  .banners .pics li, .banners .pics img {
+    display: block; }
+  .banners .nav {
+    position: absolute;
+    top: 50%;
+    width: 52px;
+    height: 100px;
+    margin-top: -50px;
+    opacity: 0.8;
+    background-color: #161312;
+    line-height: 100px;
+    text-align: center;
+    display: block; }
+    .banners .nav.left {
+      left: 30px; }
+    .banners .nav.right {
+      right: 30px; }
+  .banners .pager {
+    background-color: #161312;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 0;
+    padding: 9px 15px; }
+    .banners .pager li {
+      display: inline-block;
+      background-color: #fff;
+      width: 9px;
+      height: 9px;
+      margin: 0 5px;
+      border-radius: 50%; }
+      .banners .pager li.current {
+        background-color: #fabe00; }
+
+.center-title {
+  padding-top: 72px;
+  text-align: center; }
+  .center-title h2, .center-title h4 {
+    font-weight: 400;
+    margin: 0;
+    color: #221815;
+    line-height: 1; }
+  .center-title h2 {
+    margin-bottom: 36px;
+    font-size: 36px; }
+  .center-title h4 {
+    font-size: 16px;
+    margin-bottom: 36px; }
+
+.changjing {
+  position: relative;
+  font-size: 0; }
+  .changjing .pic {
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    padding: 18px 27px; }
+    .changjing .pic img {
+      /*margin: 27px 18px;*/ }
+
+i[class*="icon-"] {
+  display: inline-block;
+  font-size: 0;
+  background-repeat: no-repeat; }
+
+.icon-arrow-dots {
+  background-image: url("../images/icons/icon-arrow-dots.png"); }
+
+.icon-gwc {
+  background-image: url("../images/icons/icon-gwc.png"); }
+
+.icon-heart {
+  background-image: url("../images/icons/icon-heart.png"); }
+
+.icon-left-ban {
+  background-image: url("../images/icons/icon-left-ban.png"); }
+
+.icon-position {
+  background-image: url("../images/icons/icon-position.png"); }
+
+.icon-right-ban {
+  background-image: url("../images/icons/icon-right-ban.png"); }
+
+.icon-select-drop {
+  background-image: url("../images/icons/icon-select-drop.png"); }
+
+.icon-to {
+  background-image: url("../images/icons/icon-to.png"); }
+
+.icon-tomore {
+  background-image: url("../images/icons/icon-tomore.png"); }
+
+.icon-user {
+  background-image: url("../images/icons/icon-user.png"); }
+
+.icon-video {
+  background-image: url("../images/icons/icon-video.png"); }

@@ -1,0 +1,32 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+em, i {
+	font-style: normal;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+	li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+	}
+}
+
+img {
+	border: none;
+	max-width: 100%;
+	margin: auto;
+}
+
