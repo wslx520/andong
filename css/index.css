@@ -252,8 +252,18 @@ body {
       max-width: 182px;
       margin: auto; }
 
-.bg-2017 {
-  background: url(../images/ban1.jpg) no-repeat; }
+.item-ban {
+  font-size: 0;
+  position: relative; }
+  .item-ban .bg {
+    display: block; }
+  .item-ban .front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center; }
 
 i[class*="icon-"] {
   display: inline-block;

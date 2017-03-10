@@ -236,8 +236,22 @@ $black: #161312;
         }
     }
 }
-.bg-2017 {
-    background: url(../images/ban1.jpg) no-repeat;
+
+.item-ban {
+    font-size: 0;
+    position: relative;
+    .bg {
+        display: block;
+    }
+    .front {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
 }
+
 
 @import "icons";
