@@ -1,0 +1,75 @@
+/**
+* @file 生成icon样式
+* @author XLee
+*/
+
+'use strict';
+
+const gm = require('gm');
+const fs = require('fs');
+// const path = require('path');
+
+const curpath = process.cwd();
+fs.readdir(curpath, function (err, files) {
+    if (err) {
+        return;
+    }
+    files.sort();
+    // console.log(files);
+    let result = `
+i[class*="icon-"] {
+    display: inline-block;
+    background-size:contain;
+    background-repeat:no-repeat;
+}`;
+    function loop() {
+        let file = files.shift();
+        console.log(file);
+        if (file) {
+            gm(file).size(function (err, size) {
+                if (err) {
+                    return loop();
+                }
+
+                let width = size.width;
+                let height = size.height;
+                result += `
+.${file.slice(0, -4)} {
+    background-image:url(../images/icons/${file});
+    width:${width}px;
+    height:${height}px;
+}
+                `;
+                loop();
+            });
+        }
+        else {
+            fs.writeFile('./_icons.scss', result);
+        }
+    }
+    loop();
+//     files.forEach(function (file) {
+//         gm(file).size(function (err, size) {
+//             len -= 1;
+//             if (err) {
+
+//                 return;
+//             }
+
+//             let width = size.width;
+//             let height = size.height;
+//             result += `
+// .icon-${file.slice(0, -4)} {
+//     background-image:url(../img/icons/${file});
+//     width:rem(${width / 2}px);
+//     height:rem(${height / 2}px);
+// }
+//             `;
+
+//             if (len <= 1) {
+//                 fs.writeFile('./icons.scss', result);
+//             }
+
+//         });
+//     });
+});
