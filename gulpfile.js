@@ -6,12 +6,13 @@ const uglify = require('gulp-uglify');
 gulp.task('sass', function(){
     return gulp.src('./source/sass/*.scss')
         .pipe(sass())
+        .on('error', swallowError)
         .pipe(gulp.dest('./css'));
     });
 
 gulp.task('js', function(){
     return gulp.src('./source/js/*.js')
-        .pipe(gulp.dest('./js'));
+        .pipe(gulp.dest('./js')).on('error', swallowError);
     });
 
 gulp.task('jsmin', function () {
@@ -29,3 +30,10 @@ gulp.task('default', function(){
     gulp.watch('./source/sass/*.scss',['sass']);
     gulp.watch('./source/js/*.js',['js']);
 });
+
+function swallowError(error) {
+    // If you want details of the error in the console
+  console.error(error.toString())
+
+  this.emit('end')
+}

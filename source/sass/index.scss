@@ -1,9 +1,11 @@
 @import "base";
 @import "common";
 
+
+$black: #161312;
 .head-nav {
 	height: 122px;
-	background-color: #161312;
+	background-color: $black;
 	.logo {
 		/*float: left;*/
 		display: inline-block;
@@ -82,7 +84,7 @@
 		height: 100px;
 		margin-top: -50px;
 		opacity: 0.8;
-		background-color: #161312;
+		background-color: $black;
 		line-height: 100px;
 		text-align: center;
 		display: block;
@@ -94,7 +96,7 @@
 		}
 	}
 	.pager {
-		background-color: #161312;
+		background-color: $black;
 		opacity: 0.8;
 		position: absolute;
 		bottom: 0;
@@ -149,4 +151,93 @@
 
 	}
 }
+.group {
+    text-align: center;
+}
+.smallbar {
+    display: inline-block;
+    font-size: 0;
+    em {
+        color: #221815;
+    }
+    .left, .right {
+        border: 1px solid $black;
+        height: 30px;
+        display: inline-block;
+    }
+    .left {
+        border-right: none;
+        padding: 0 22px;
+        em {
+            font-size: 18px;
+        }
+    }
+    .right {
+        padding: 0 10px;
+        em {
+            font-size: 16px;
+            margin-right: 15px;
+        }
+    }
+    &.mid {
+        .left, .right {
+            height: 69px;
+            line-height: 69px;
+        }
+    }
+}
+
+.changjing2 {
+    max-width: 1494px;
+    .mains, .subs {
+        font-size: 0;
+        li {
+            display: inline-block;
+        }
+    }
+    .mains {
+        li {
+            width: 33.3333333%;
+        }
+    }
+    .subs {
+        li {
+            width: 16.666666666%;
+        }
+    }
+}
+
+.products {
+    font-size: 0;
+    li {
+        display: inline-block;
+        width: 25%;
+    }
+    a {
+        display: inline-block;
+        span {
+            color: #221815;
+            display: block;
+            line-height: 1;
+        }
+        .name {
+            font-size: 16px;
+        }
+        .price {
+            font-size: 18px;
+            margin: 14px auto;
+        }
+        .service {
+            font-size: 12px;
+            padding-top: 15px;
+            border-top: 1px solid $black;
+            max-width: 182px;
+            margin: auto;
+        }
+    }
+}
+.bg-2017 {
+    background: url(../images/ban1.jpg) no-repeat;
+}
+
 @import "icons";

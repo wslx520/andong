@@ -39,7 +39,7 @@ i[class*="icon-"] {
     width:${width}px;
     height:${height}px;
 }
-                `;
+`;
                 loop();
             });
         }
@@ -48,28 +48,5 @@ i[class*="icon-"] {
         }
     }
     loop();
-//     files.forEach(function (file) {
-//         gm(file).size(function (err, size) {
-//             len -= 1;
-//             if (err) {
 
-//                 return;
-//             }
-
-//             let width = size.width;
-//             let height = size.height;
-//             result += `
-// .icon-${file.slice(0, -4)} {
-//     background-image:url(../img/icons/${file});
-//     width:rem(${width / 2}px);
-//     height:rem(${height / 2}px);
-// }
-//             `;
-
-//             if (len <= 1) {
-//                 fs.writeFile('./icons.scss', result);
-//             }
-
-//         });
-//     });
 });

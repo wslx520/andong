@@ -25,6 +25,27 @@ img {
   max-width: 100%;
   margin: auto; }
 
+.pr {
+  position: relative; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.fn {
+  float: none; }
+
+.tl {
+  text-align: left; }
+
+.tc {
+  text-align: center; }
+
+.tr {
+  text-align: right; }
+
 .vm {
   /*display: inline-block;*/
   vertical-align: middle;
@@ -171,40 +192,125 @@ body {
     .changjing .pic img {
       /*margin: 27px 18px;*/ }
 
+.group {
+  text-align: center; }
+
+.smallbar {
+  display: inline-block;
+  font-size: 0; }
+  .smallbar em {
+    color: #221815; }
+  .smallbar .left, .smallbar .right {
+    border: 1px solid #161312;
+    height: 30px;
+    display: inline-block; }
+  .smallbar .left {
+    border-right: none;
+    padding: 0 22px; }
+    .smallbar .left em {
+      font-size: 18px; }
+  .smallbar .right {
+    padding: 0 10px; }
+    .smallbar .right em {
+      font-size: 16px;
+      margin-right: 15px; }
+  .smallbar.mid .left, .smallbar.mid .right {
+    height: 69px;
+    line-height: 69px; }
+
+.changjing2 {
+  max-width: 1494px; }
+  .changjing2 .mains, .changjing2 .subs {
+    font-size: 0; }
+    .changjing2 .mains li, .changjing2 .subs li {
+      display: inline-block; }
+  .changjing2 .mains li {
+    width: 33.3333333%; }
+  .changjing2 .subs li {
+    width: 16.666666666%; }
+
+.products {
+  font-size: 0; }
+  .products li {
+    display: inline-block;
+    width: 25%; }
+  .products a {
+    display: inline-block; }
+    .products a span {
+      color: #221815;
+      display: block;
+      line-height: 1; }
+    .products a .name {
+      font-size: 16px; }
+    .products a .price {
+      font-size: 18px;
+      margin: 14px auto; }
+    .products a .service {
+      font-size: 12px;
+      padding-top: 15px;
+      border-top: 1px solid #161312;
+      max-width: 182px;
+      margin: auto; }
+
+.bg-2017 {
+  background: url(../images/ban1.jpg) no-repeat; }
+
 i[class*="icon-"] {
   display: inline-block;
-  font-size: 0;
+  background-size: contain;
   background-repeat: no-repeat; }
 
 .icon-arrow-dots {
-  background-image: url("../images/icons/icon-arrow-dots.png"); }
+  background-image: url(../images/icons/icon-arrow-dots.png);
+  width: 9px;
+  height: 9px; }
 
 .icon-gwc {
-  background-image: url("../images/icons/icon-gwc.png"); }
+  background-image: url(../images/icons/icon-gwc.png);
+  width: 21px;
+  height: 21px; }
 
 .icon-heart {
-  background-image: url("../images/icons/icon-heart.png"); }
+  background-image: url(../images/icons/icon-heart.png);
+  width: 21px;
+  height: 19px; }
 
 .icon-left-ban {
-  background-image: url("../images/icons/icon-left-ban.png"); }
+  background-image: url(../images/icons/icon-left-ban.png);
+  width: 13px;
+  height: 32px; }
 
 .icon-position {
-  background-image: url("../images/icons/icon-position.png"); }
+  background-image: url(../images/icons/icon-position.png);
+  width: 9px;
+  height: 12px; }
 
 .icon-right-ban {
-  background-image: url("../images/icons/icon-right-ban.png"); }
+  background-image: url(../images/icons/icon-right-ban.png);
+  width: 13px;
+  height: 32px; }
 
 .icon-select-drop {
-  background-image: url("../images/icons/icon-select-drop.png"); }
+  background-image: url(../images/icons/icon-select-drop.png);
+  width: 5px;
+  height: 3px; }
 
 .icon-to {
-  background-image: url("../images/icons/icon-to.png"); }
+  background-image: url(../images/icons/icon-to.png);
+  width: 23px;
+  height: 19px; }
 
 .icon-tomore {
-  background-image: url("../images/icons/icon-tomore.png"); }
+  background-image: url(../images/icons/icon-tomore.png);
+  width: 27px;
+  height: 25px; }
 
 .icon-user {
-  background-image: url("../images/icons/icon-user.png"); }
+  background-image: url(../images/icons/icon-user.png);
+  width: 16px;
+  height: 19px; }
 
 .icon-video {
-  background-image: url("../images/icons/icon-video.png"); }
+  background-image: url(../images/icons/icon-video.png);
+  width: 60px;
+  height: 60px; }
