@@ -17,7 +17,7 @@ fs.readdir(curpath, function (err, files) {
     files.sort();
     // console.log(files);
     let result = `
-i[class*="icon-"] {
+i[class*="fl-"] {
     display: inline-block;
     background-size:contain;
     background-repeat:no-repeat;
@@ -36,7 +36,7 @@ i[class*="icon-"] {
 	                let height = size.height;
 	                result += `
 .${file.slice(0, -4)} {
-    background-image:url(../images/icons/${file});
+    background-image:url(../images/fl/${file});
     width:${width}px;
     height:${height}px;
 }
@@ -49,7 +49,7 @@ i[class*="icon-"] {
         	}
         }
         else {
-            fs.writeFile('./_icons.scss', result);
+            fs.writeFile('./_fl.scss', result);
         }
     }
     loop();

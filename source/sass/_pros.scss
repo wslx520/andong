@@ -1,0 +1,33 @@
+@import "vars";
+
+.products {
+    font-size: 0;
+    padding-bottom: 84px;
+    text-align: center;
+    li {
+        display: inline-block;
+        width: 25%;
+    }
+    a {
+        display: inline-block;
+        span {
+            color: $font;
+            display: block;
+            line-height: 1;
+        }
+        .name {
+            font-size: 16px;
+        }
+        .price {
+            font-size: 18px;
+            margin: 14px auto;
+        }
+        .service {
+            font-size: 12px;
+            padding-top: 15px;
+            border-top: 1px solid $black;
+            max-width: 182px;
+            margin: auto;
+        }
+    }
+}

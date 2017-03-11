@@ -26,6 +26,14 @@ gulp.task('jsmin', function () {
 
 });
 
+gulp.task('copy', function () {
+	return gulp.src(['./css/**/*','./images/**/*', './bootstrap/**/*', './*.html'], {
+		base: './'
+	})
+        .pipe(gulp.dest('../dist'));
+
+});
+
 gulp.task('default', function(){
     gulp.watch('./source/sass/*.scss',['sass']);
     gulp.watch('./source/js/*.js',['js']);

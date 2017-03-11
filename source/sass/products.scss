@@ -1,0 +1,124 @@
+@import "base";
+@import "common";
+@import "fl";
+
+.fenlei-menu {
+	background-color: $black;
+	height: 155px;
+	text-align: center;
+	border-top: 1px solid #5C5A5A;
+	ul {
+		font-size: 0;
+		margin: auto;
+	}
+	li {
+		display: inline-block;
+		margin: 0 18px;
+		vertical-align: top;
+		.two-i {
+			display: block;
+			height: 70px;
+			i:first-child {
+				display: inline-block;
+				opacity: 0.3;
+			}
+			i:last-child {
+				display: none;
+			}
+		}
+		.name {
+			font-size: 12px;
+			line-height: 1;
+		}
+		.num {
+			font-size: 12px;
+			display: none;
+			margin-top: 10px;
+			padding-top: 10px;
+			line-height: 1;
+		}
+		&.on {
+			.two-i {
+				i:last-child {
+					display: inline-block;
+				}
+				i:first-child {
+					display: none;
+				}
+			}
+			.num {
+				border-top: 1px solid #5C5A5A;
+				display: block;
+			}
+		}
+	}
+}
+
+.tuan {
+	.item {
+		text-align: center;
+	}
+	.yuanjia {
+		font-size: 12px;
+		line-height: 1;
+	}
+	.name {
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 20px;
+		margin-top: 34px;
+		color: $black;
+	}
+	.desc {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+	.btn-buy {
+		background-color: transparent;
+		width: 320px;
+		height: 69px;
+		border: 1px solid $black;
+		> * {
+			vertical-align: middle;
+		}
+		em {
+			font-size: 12px;
+		}
+		span {
+			font-size: 30px;
+		}
+	}
+}
+
+.group {
+	text-align: center;
+}
+.loadmore {
+	display: inline-block;
+	margin: auto;
+	color: #fff;
+	width: 390px;
+	height: 69px;
+	background-color: $black;
+	border: none;
+	margin-bottom: 120px;
+	em {
+		font-size: 18px;
+	}
+	em, i {
+		vertical-align: middle;
+	}
+}
+
+@import "head";
+@import "pros";
+@import "foot";
+@import "icons";
+
+
+.products {
+	border-top: 1px solid #000;
+	margin-top: 100px;
+	padding-top: 100px;
+}

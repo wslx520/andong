@@ -1,0 +1,44 @@
+$black: #161312;
+$font: #221815;
+
+
+.foot-links {
+	height: 360px;
+	background-color: $black;
+	color: #fff;
+	.logo {
+		margin-top: 107px;
+		display: block;
+	}
+	a {
+		color: #fff;
+	}
+	a:hover {
+		color: #fff;
+	}
+	.links {
+		h3 {
+			font-size: 16px;
+			margin-bottom: 45px;
+			margin-top: 110px;
+		}
+		li {
+			font-size: 14px;
+			margin-bottom: 18px;
+		}
+
+	}
+	.erweima {
+		margin-top: 96px;
+	}
+}
+
+.foot {
+	text-align: center;
+	background-color: $black;
+	color: #fff;
+	height: 155px;
+	border-top: 2px solid #2E2B2A;
+	padding-top: 40px;
+	line-height: 30px;
+}
