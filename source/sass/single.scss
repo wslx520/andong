@@ -1,0 +1,66 @@
+@import "base";
+@import "common";
+@import "fl";
+
+.single {
+	.title {
+		height: 162px;
+		h2 {
+			font-size: 30px;
+			color: $black;
+			line-height: 1;
+			margin-top: 48px;
+			margin-bottom: 28px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 1;
+		}
+	}
+	.base-info {
+		height: 162px;
+		font-size: 0;
+		position: relative;
+	}
+	.price {
+		font-size: 30px;
+	}
+	.btn-buy {
+		width: 262px;
+		height: 62px;
+		font-size: 18px;
+		color: #fff;
+		border: none;
+		background-color: $black;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	.some {
+		i {
+			margin-right: 15px;
+		}
+	}
+}
+.tab-bar {
+	height: 80px;
+	background-color: $black;
+	font-size: 0;
+	padding-left: 215px;
+	span {
+		font-size: 16px;
+		color: #E8E8E8;
+		text-align: center;
+		width: 110px;
+		display: inline-block;
+		&.on {
+			color: #fff;
+		}
+	}
+}
+
+
+@import "head";
+@import "pros";
+@import "foot";
+@import "icons";
+
