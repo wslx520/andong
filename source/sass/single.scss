@@ -41,6 +41,155 @@
 		}
 	}
 }
+
+.detail-head {
+	border-top: 1px solid $black;
+	padding-top: 76px;
+}
+.main-pic {
+	@include aspect-ratio(1, 1);
+	position: relative;
+	.vm {
+		position: absolute;
+	background-color: #eee;
+		left: 0;
+		top: 0;
+		right: 15px;
+		bottom: 15px;
+		/*width: 100%;
+		height: 100%;*/
+		text-align: center;
+		img {
+			margin: auto;
+		}
+	}
+}
+.thumbs-list {
+	font-size: 0;
+	li {
+		display: inline-block;
+		width: 20%;
+	}
+	span {
+		display: inline-block;
+		max-width: 136px;                                                                
+		/*height: 136px;*/
+		/*@include aspect-ratio(1, 1);*/
+		border: 1px solid $black;
+		margin-right: 15px;
+		position: relative;
+		i {
+			display: none;
+			right: 0;
+			bottom: 0;
+			position: absolute;
+		}
+		&.on {
+			border-width: 2px;
+			i {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.select-box {
+	display: inline-block;
+	height: 36px;
+	padding: 0 20px;
+	line-height: 36px;
+	font-size: 0;
+	border: 1px solid $black;
+	em, i{
+		vertical-align: middle;
+		display: inline-block;
+	}
+	em {
+		font-size: 16px;
+		margin-right: 6px;
+	}
+}
+
+.table-product {
+	th, td {
+		vertical-align: top;
+		padding: 15px 11px;
+	}
+	th {
+		width: 64px;
+	}
+	.tag {
+		line-height: 36px;
+	}
+	.labels {
+		font-size: 0;
+	}
+	.label-pro {
+		height: 36px;
+		padding: 0 16px;
+		border: 1px solid $black;
+		line-height: 34px;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 16px;
+		margin-right: 13px;
+		margin-bottom: 11px;
+		&.on {
+			border-width: 2px;
+		}
+	}
+	.color-piece {
+		padding: 8px;
+		display: inline-block;
+		border: 1px solid $black;
+		position: relative;
+		i {
+			display: none;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		&.on {
+			border-width: 2px;
+			padding: 7px;
+			i {
+				display: inline-block;
+			}
+		}
+		.in {
+			background-color: #eee;
+			display: block;
+			width: 25px;
+			height: 25px;
+		}
+	}
+	.song {
+		vertical-align: middle;
+		margin-top: 15px;
+		> em, > span {
+			vertical-align: middle;
+		} 
+	}
+	.number-picker {
+		font-size: 0;
+		em {
+			height: 60px;
+			line-height: 60px;
+			vertical-align: middle;
+			border: 1px solid $black;
+			font-size: 14px;
+			display: inline-block;
+			width: 30px;
+			text-align: center;
+		}
+		.num {
+			width: 66px;
+			font-size: 16px;
+			border-left: none;
+			border-right: none;
+		}
+	}
+}
 .tab-bar {
 	height: 80px;
 	background-color: $black;
