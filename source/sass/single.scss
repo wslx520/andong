@@ -120,6 +120,7 @@
 	}
 	.tag {
 		line-height: 36px;
+		font-weight: 400;
 	}
 	.labels {
 		font-size: 0;
@@ -172,6 +173,8 @@
 	}
 	.number-picker {
 		font-size: 0;
+		vertical-align: middle;
+		margin-right: 12px;
 		em {
 			height: 60px;
 			line-height: 60px;
@@ -188,6 +191,11 @@
 			border-left: none;
 			border-right: none;
 		}
+	}
+	.stock {
+		line-height: 60px;
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
 .tab-bar {

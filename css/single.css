@@ -328,7 +328,8 @@ i[class*="fl-"] {
   width: 64px; }
 
 .table-product .tag {
-  line-height: 36px; }
+  line-height: 36px;
+  font-weight: 400; }
 
 .table-product .labels {
   font-size: 0; }
@@ -374,7 +375,9 @@ i[class*="fl-"] {
     vertical-align: middle; }
 
 .table-product .number-picker {
-  font-size: 0; }
+  font-size: 0;
+  vertical-align: middle;
+  margin-right: 12px; }
   .table-product .number-picker em {
     height: 60px;
     line-height: 60px;
@@ -389,6 +392,11 @@ i[class*="fl-"] {
     font-size: 16px;
     border-left: none;
     border-right: none; }
+
+.table-product .stock {
+  line-height: 60px;
+  display: inline-block;
+  vertical-align: middle; }
 
 .tab-bar {
   height: 80px;
