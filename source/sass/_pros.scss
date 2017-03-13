@@ -10,6 +10,7 @@
     }
     a {
         display: inline-block;
+        position: relative;
         span {
             color: $font;
             display: block;
@@ -29,5 +30,38 @@
             max-width: 182px;
             margin: auto;
         }
+        .box {
+        	display: none;
+        	background-color: #fff;
+        	opacity: 0.9;
+        	border: 10px solid #ddd;
+        	width: 210px;
+        	height: 200px; 
+        	position: absolute;       	
+        	left: 50%;
+        	margin-left: -105px;
+        	top: 50%; 
+        	margin-top: -100px;
+        	padding: 20px;
+        	.txt {
+        		font-size: 12px;
+        		line-height: 24px;
+        	}
+        	.icons {
+        		border-top: 1px solid $black;
+        		display: block;
+        		padding-top: 30px;
+        		margin-top: 30px;
+        		i {
+        			margin: 0 12px;
+        		}
+        	}
+        }
+        &:hover {
+        	text-decoration: none;
+        }
+    }
+    li:hover .box {
+    	display: block;
     }
 }

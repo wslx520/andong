@@ -84,6 +84,57 @@ body {
     font-size: 0;
     height: 0; }
 
+.full-width {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin: auto; }
+
+.center-title {
+  padding-top: 72px;
+  text-align: center; }
+  .center-title h2, .center-title h4 {
+    font-weight: 400;
+    margin: 0;
+    color: #221815;
+    line-height: 1; }
+  .center-title h2 {
+    margin-bottom: 36px;
+    font-size: 36px; }
+  .center-title h4 {
+    font-size: 16px;
+    margin-bottom: 36px; }
+
+.smallbar-a {
+  display: inline-block; }
+
+.smallbar {
+  display: inline-block;
+  font-size: 0;
+  margin-bottom: 36px; }
+  .smallbar em {
+    color: #221815; }
+  .smallbar .left, .smallbar .right {
+    border: 1px solid #161312;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block; }
+  .smallbar .left {
+    border-right: none;
+    padding: 0 22px; }
+    .smallbar .left em {
+      font-size: 18px; }
+  .smallbar .right {
+    padding: 0 10px; }
+    .smallbar .right em {
+      font-size: 16px;
+      margin-right: 15px; }
+  .smallbar.mid {
+    margin-bottom: 68px; }
+    .smallbar.mid .left, .smallbar.mid .right {
+      height: 69px;
+      line-height: 69px; }
+
 body {
   color: #221815; }
 
@@ -154,21 +205,6 @@ body {
       .banners .pager li.current, .banners .pager li.on {
         background-color: #fabe00; }
 
-.center-title {
-  padding-top: 72px;
-  text-align: center; }
-  .center-title h2, .center-title h4 {
-    font-weight: 400;
-    margin: 0;
-    color: #221815;
-    line-height: 1; }
-  .center-title h2 {
-    margin-bottom: 36px;
-    font-size: 36px; }
-  .center-title h4 {
-    font-size: 16px;
-    margin-bottom: 36px; }
-
 .changjing {
   position: relative;
   font-size: 0; }
@@ -186,36 +222,6 @@ body {
 .m1396 {
   max-width: 1396px;
   margin: auto; }
-
-.smallbar-a {
-  display: inline-block; }
-
-.smallbar {
-  display: inline-block;
-  font-size: 0;
-  margin-bottom: 36px; }
-  .smallbar em {
-    color: #221815; }
-  .smallbar .left, .smallbar .right {
-    border: 1px solid #161312;
-    height: 30px;
-    line-height: 30px;
-    display: inline-block; }
-  .smallbar .left {
-    border-right: none;
-    padding: 0 22px; }
-    .smallbar .left em {
-      font-size: 18px; }
-  .smallbar .right {
-    padding: 0 10px; }
-    .smallbar .right em {
-      font-size: 16px;
-      margin-right: 15px; }
-  .smallbar.mid {
-    margin-bottom: 68px; }
-    .smallbar.mid .left, .smallbar.mid .right {
-      height: 69px;
-      line-height: 69px; }
 
 .changjing2 {
   max-width: 1494px;
@@ -498,7 +504,8 @@ i[class*="icon-"] {
     display: inline-block;
     width: 25%; }
   .products a {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
     .products a span {
       color: #221815;
       display: block;
@@ -514,6 +521,33 @@ i[class*="icon-"] {
       border-top: 1px solid #161312;
       max-width: 182px;
       margin: auto; }
+    .products a .box {
+      display: none;
+      background-color: #fff;
+      opacity: 0.9;
+      border: 10px solid #ddd;
+      width: 210px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      margin-left: -105px;
+      top: 50%;
+      margin-top: -100px;
+      padding: 20px; }
+      .products a .box .txt {
+        font-size: 12px;
+        line-height: 24px; }
+      .products a .box .icons {
+        border-top: 1px solid #161312;
+        display: block;
+        padding-top: 30px;
+        margin-top: 30px; }
+        .products a .box .icons i {
+          margin: 0 12px; }
+    .products a:hover {
+      text-decoration: none; }
+  .products li:hover .box {
+    display: block; }
 
 .head-nav {
   height: 122px;

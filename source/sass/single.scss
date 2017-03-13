@@ -35,7 +35,7 @@
 		margin-left: 7%;
 		margin-right: 7%;
 	}
-	.some {
+	.icons {
 		i {
 			margin-right: 15px;
 		}
@@ -215,7 +215,43 @@
 	}
 }
 
+.tabs-pic {
+	text-align: center;
+	max-width: 1000px;
+	margin: 0 auto 90px;
+	.foot-tabs {
+		font-size: 0;
+		li {
+			display: inline-block;
+			margin: 0 30px;
+		}
+		.txt {
+			border-top: 2px solid $black;
+			font-size: 14px;
+			line-height: 1;
+			padding-top: 18px;
+		}
+	}
+}
 
+.more-detail {
+	background-color: #f3f3f3;
+	h2 {
+		height: 162px;
+		line-height: 162px;
+		border-bottom: 1px solid #fff;
+	}
+	.col-md-3 {
+		height: 192px;
+		padding-top: 54px;
+		.b {
+			margin-top: 30px;
+			line-height: 1;
+			display: block;
+			margin-bottom: 18px;
+		}
+	}
+}
 @import "head";
 @import "pros";
 @import "foot";

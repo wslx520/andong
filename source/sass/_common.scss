@@ -55,4 +55,65 @@ body {
 .full-width {
     width: 100%;
     overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+
+.center-title {
+	padding-top: 72px;
+	text-align: center;
+	h2, h4 {
+		font-weight: 400;
+		margin: 0;
+		color: $font;
+		line-height: 1;
+	}
+	h2 {
+		margin-bottom: 36px;
+		font-size: 36px;
+	}
+	h4 {
+		font-size: 16px;
+		margin-bottom: 36px;
+	}
+}
+
+.smallbar-a {
+	display: inline-block;
+}
+.smallbar {
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 36px;
+    em {
+        color: $font;
+    }
+    .left, .right {
+        border: 1px solid $black;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+    }
+    .left {
+        border-right: none;
+        padding: 0 22px;
+        em {
+            font-size: 18px;
+        }
+    }
+    .right {
+        padding: 0 10px;
+        em {
+            font-size: 16px;
+            margin-right: 15px;
+        }
+    }
+    &.mid {
+    	margin-bottom: 68px;
+        .left, .right {
+            height: 69px;
+            line-height: 69px;
+        }
+    }
 }
