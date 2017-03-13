@@ -306,6 +306,10 @@ i[class*="fl-"] {
 .detail-head {
   border-top: 1px solid #161312;
   padding-top: 76px; }
+  .detail-head .row {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px; }
 
 .main-pic {
   position: relative;
@@ -477,6 +481,14 @@ i[class*="fl-"] {
       font-size: 14px;
       line-height: 1;
       padding-top: 18px; }
+
+.two .col h3 {
+  line-height: 1;
+  margin: 32px 0 26px; }
+
+.two .col p {
+  line-height: 24px;
+  padding-bottom: 90px; }
 
 .more-detail {
   background-color: #f3f3f3; }

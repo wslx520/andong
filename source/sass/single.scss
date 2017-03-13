@@ -45,6 +45,11 @@
 .detail-head {
 	border-top: 1px solid $black;
 	padding-top: 76px;
+	.row {
+		width: 80%;
+		margin: auto;
+		padding-bottom: 100px;
+	}
 }
 .main-pic {
 	@include aspect-ratio(1, 1);
@@ -234,6 +239,18 @@
 	}
 }
 
+	.two {
+		.col {
+			h3 {
+				line-height: 1;
+				margin: 32px 0 26px;
+			}
+			p {
+				line-height: 24px;
+				padding-bottom: 90px;
+			}
+		}
+	}
 .more-detail {
 	background-color: #f3f3f3;
 	h2 {
