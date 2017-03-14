@@ -4,6 +4,6 @@ require.config({
     baseUrl: 'js',
     paths: {
         lib: 'lib', // 引用外部模块可以用paths配置
-        plugin: './plugin' // 前缀匹配，plugin/css和plugin/js等模块都将到 "./plugin"下查找
+        plugin: 'plugin' // 前缀匹配，plugin/css和plugin/js等模块都将到 "./plugin"下查找
     }
 });

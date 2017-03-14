@@ -17,7 +17,7 @@ fs.readdir(curpath, function (err, files) {
     files.sort();
     // console.log(files);
     let result = `
-i[class*="fl-"] {
+i[class*="fl-"],i[class*="bfl-"] {
     display: inline-block;
     background-size:contain;
     background-repeat:no-repeat;

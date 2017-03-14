@@ -135,10 +135,75 @@ body {
       height: 69px;
       line-height: 69px; }
 
-i[class*="fl-"] {
+i[class*="fl-"], i[class*="bfl-"] {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat; }
+
+.bfl-all {
+  background-image: url(../images/fl/bfl-all.png);
+  width: 28px;
+  height: 30px; }
+
+.bfl-canju {
+  background-image: url(../images/fl/bfl-canju.png);
+  width: 29px;
+  height: 30px; }
+
+.bfl-chuang {
+  background-image: url(../images/fl/bfl-chuang.png);
+  width: 29px;
+  height: 30px; }
+
+.bfl-chuwugui {
+  background-image: url(../images/fl/bfl-chuwugui.png);
+  width: 34px;
+  height: 30px; }
+
+.bfl-deng {
+  background-image: url(../images/fl/bfl-deng.png);
+  width: 25px;
+  height: 30px; }
+
+.bfl-light {
+  background-image: url(../images/fl/bfl-light.png);
+  width: 28px;
+  height: 30px; }
+
+.bfl-qita {
+  background-image: url(../images/fl/bfl-qita.png);
+  width: 23px;
+  height: 30px; }
+
+.bfl-shafa {
+  background-image: url(../images/fl/bfl-shafa.png);
+  width: 28px;
+  height: 30px; }
+
+.bfl-shipin {
+  background-image: url(../images/fl/bfl-shipin.png);
+  width: 24px;
+  height: 32px; }
+
+.bfl-weiyu {
+  background-image: url(../images/fl/bfl-weiyu.png);
+  width: 30px;
+  height: 30px; }
+
+.bfl-yi {
+  background-image: url(../images/fl/bfl-yi.png);
+  width: 30px;
+  height: 30px; }
+
+.bfl-yigui {
+  background-image: url(../images/fl/bfl-yigui.png);
+  width: 26px;
+  height: 30px; }
+
+.bfl-zhuo {
+  background-image: url(../images/fl/bfl-zhuo.png);
+  width: 29px;
+  height: 30px; }
 
 .fl-all-on {
   background-image: url(../images/fl/fl-all-on.png);
@@ -562,6 +627,7 @@ i[class*="fl-"] {
       color: #999;
       text-align: center;
       display: inline-block;
+      cursor: pointer;
       margin: 0 30px 0 25px; }
       .head-nav .info .login i {
         margin-right: 14px; }
