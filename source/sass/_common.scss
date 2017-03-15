@@ -117,3 +117,18 @@ body {
         }
     }
 }
+.fixed-holder, .true-fixed {
+    height: 110px;
+}
+
+.true-fixed {
+    
+}
+/* 固定到顶部位置 */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}

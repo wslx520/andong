@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   margin: 0;
   padding: 0; }
@@ -134,6 +135,17 @@ body {
     .smallbar.mid .left, .smallbar.mid .right {
       height: 69px;
       line-height: 69px; }
+
+.fixed-holder, .true-fixed {
+  height: 110px; }
+
+/* 固定到顶部位置 */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
 
 i[class*="fl-"], i[class*="bfl-"] {
   display: inline-block;
@@ -334,6 +346,12 @@ i[class*="fl-"], i[class*="bfl-"] {
   background-image: url(../images/fl/fl-zhuo.png);
   width: 29px;
   height: 30px; }
+
+.fixed-holder {
+  position: relative;
+  height: 155px; }
+  .fixed-holder .true-fixed {
+    height: 155px; }
 
 .fenlei-menu {
   background-color: #F2F2F2;
