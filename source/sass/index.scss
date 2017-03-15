@@ -83,6 +83,8 @@ body {
 .changjing {
 	position: relative;
 	font-size: 0;
+	margin: auto;
+	max-width: 1494px;
 	.pic {
 		display: inline-block;
 		width: 50%;
@@ -104,6 +106,7 @@ body {
 }
 .changjing2 {
     max-width: 1494px;
+    margin: auto;
     /*padding: 0 200px;*/
     .mains, .subs {
         font-size: 0;
