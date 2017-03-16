@@ -147,6 +147,21 @@ body {
   width: 100%;
   z-index: 999; }
 
+.wrap {
+  min-width: 1280px; }
+
+.max-w {
+  max-width: 1490px;
+  margin: auto;
+  *zoom: 1; }
+  .max-w:after {
+    content: '';
+    display: table;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0; }
+
 i[class*="fl-"], i[class*="bfl-"] {
   display: inline-block;
   background-size: contain;
@@ -533,9 +548,14 @@ i[class*="fl-"], i[class*="bfl-"] {
       line-height: 1; }
     .head-nav .info .locate {
       font-size: 12px;
-      line-height: 1; }
+      line-height: 1;
+      height: 12px;
+      display: inline-block;
+      position: relative; }
       .head-nav .info .locate i {
         margin-right: 6px; }
+      .head-nav .info .locate em {
+        font-family: "宋体"; }
     .head-nav .info .line, .head-nav .info .city, .head-nav .info .login {
       font-size: 14px;
       line-height: 1; }

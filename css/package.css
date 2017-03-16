@@ -165,6 +165,17 @@ body {
 body {
   color: #221815; }
 
+.top-bar {
+  height: 114px; }
+  .top-bar .vm {
+    display: inline-block;
+    height: 114px; }
+  .top-bar .big {
+    font-size: 30px;
+    margin-right: 44px; }
+  .top-bar .small {
+    font-size: 16px; }
+
 .banners {
   position: relative;
   overflow: hidden;

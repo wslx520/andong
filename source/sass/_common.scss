@@ -132,3 +132,22 @@ body {
     width: 100%;
     z-index: 999;
 }
+
+.wrap {
+	min-width: 1280px;
+}
+
+.max-w {
+	max-width: 1490px;
+	margin: auto;
+	*zoom: 1;
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+		visibility: hidden;
+		font-size: 0;
+		height: 0;
+
+	}
+}

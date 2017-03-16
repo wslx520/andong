@@ -50,8 +50,14 @@ $font: #221815;
 		.locate {
 			font-size: 12px;
 			line-height: 1;
+			height: 12px;
+			display: inline-block;
+			position: relative;
 			i {
 				margin-right: 6px;
+			}
+			em {
+				font-family: "宋体";
 			}
 		}
 		.line, .city, .login {

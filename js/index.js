@@ -4,5 +4,12 @@ define(function (require, exports, module) {
 	var xscroll = XScroll('banner-pics', 
 		{auto:4000,how:1, direct:1,pager:'banner-pager'}
 	);
+	console.log(xscroll);
+	$('.nav.left').on('click', function () {
+		xscroll.Prev();
+	});
+	$('.nav.right').on('click', function () {
+		xscroll.Next();
+	});
 });
 
