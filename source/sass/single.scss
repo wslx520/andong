@@ -47,6 +47,7 @@
 	padding-top: 76px;
 	.row {
 		width: 80%;
+		max-width: 1490px;
 		margin: auto;
 		padding-bottom: 100px;
 	}
@@ -54,6 +55,7 @@
 .main-pic {
 	@include aspect-ratio(1, 1);
 	position: relative;
+	max-height: 400px;
 	.vm {
 		position: absolute;
 	background-color: #eee;

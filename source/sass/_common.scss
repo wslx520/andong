@@ -135,6 +135,7 @@ body {
 
 .wrap {
 	min-width: 1280px;
+	width: 1920px;
 }
 
 .max-w {
@@ -151,3 +152,23 @@ body {
 
 	}
 }
+
+.btn-big {
+	width: 320px;
+	height: 70px;
+	background-color: transparent;
+	border: 1px solid $black;
+	em, i, span {
+		vertical-align: middle;
+	}
+	em {
+		font-size: 18px;
+	}
+	i {
+		font-size: 16px;
+		margin-left: 36px;
+	}
+}
+
+
+@import "font";
