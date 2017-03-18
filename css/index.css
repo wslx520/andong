@@ -571,14 +571,15 @@ body {
     line-height: 100px;
     text-align: center;
     display: block; }
+    .banners .nav i {
+      font-size: 32px;
+      color: #fff; }
+    .banners .nav:hover i {
+      color: #fabe00; }
     .banners .nav.left {
       left: 30px; }
-      .banners .nav.left:hover i {
-        background-image: url(../images/icons/icon-left-ban1.png); }
     .banners .nav.right {
       right: 30px; }
-      .banners .nav.right:hover i {
-        background-image: url(../images/icons/icon-right-ban1.png); }
   .banners .pager-bar {
     text-align: center;
     position: absolute;

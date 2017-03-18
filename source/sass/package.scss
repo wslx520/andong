@@ -52,21 +52,20 @@ body {
 		line-height: 100px;
 		text-align: center;
 		display: block;
+		i {
+			font-size: 32px;
+			color: #fff;
+		}
+		&:hover {
+			i {
+				color: #fabe00;
+			}
+		}
 		&.left {
 			left: 30px;
-			&:hover {
-				i {
-					background-image: url(../images/icons/icon-left-ban1.png);
-				}
-			}
 		}
 		&.right {
 			right: 30px;
-			&:hover {
-				i {
-					background-image: url(../images/icons/icon-right-ban1.png);
-				}
-			}
 		}
 	}
 	.pager-bar {
@@ -136,22 +135,97 @@ body {
 		}
 	}
 }
-
-.changjing {
-	position: relative;
-	font-size: 0;
-	margin: auto;
-	max-width: 1494px;
-	.pic {
+.shuoming {
+	background-color: #f7f7f7;
+	text-align: center;
+	height: 214px;
+	.col {
+		float: left;
+		width: 25%;
+		padding: 0 46px;
+	}
+	.title {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.line {
+		width: 32px;
+		height: 1px;
+		font-size: 0;
+		background-color: #000;
 		display: inline-block;
-		width: 50%;
-		overflow: hidden;
-		padding: 18px 27px;
-		img {
-			/*margin: 27px 18px;*/
+		margin: 10px auto;
+	}
+	.p {
+		font-size: 14px;
+	}
+}
+.diban {
+	position: relative;
+	height: 840px;
+	background-color: #f7f7f7;
+	.bg {
+		background: url(../images/diban.jpg) no-repeat 70% 0;
+		height: 100%;
+	}
+	.front {
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		text-align: left;
+		padding-top: 150px;
+		.sup-title {
+			font-size: 24px;
 		}
-		
-
+		.title {
+			font-size: 32px;
+		}
+		.p {
+			font-size: 14px;
+			line-height: 24px;
+			border: 1px solid #000;
+			border-left: none;
+			border-right: none;
+			max-width: 636px;
+			padding: 27px 0;
+			color: #666;
+		}
+		.about .col {
+			display: inline-block;
+			width: 280px;
+			margin-right: 60px;
+			float: left;
+			padding-top: 46px;
+			.sup {
+				font-size: 12px;
+				line-height: 1;
+			}
+			.h2 {
+				font-size: 24px;
+				line-height: 1;
+				margin: 10px 0;
+			}
+			.sub {
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+		.table-stuff {
+			margin: 130px auto 0;
+			td {
+				width: 215px;
+				height: 60px;
+				text-align: center;
+				border: 1px solid #000;
+				&:hover {
+					background-color: #000;
+					color: #fff;
+					cursor: default;
+				}
+			}
+		}
 	}
 }
 .group {

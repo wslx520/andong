@@ -35,21 +35,20 @@ body {
 		line-height: 100px;
 		text-align: center;
 		display: block;
+		i {
+			font-size: 32px;
+			color: #fff;
+		}
+		&:hover {
+			i {
+				color: #fabe00;
+			}
+		}
 		&.left {
 			left: 30px;
-			&:hover {
-				i {
-					background-image: url(../images/icons/icon-left-ban1.png);
-				}
-			}
 		}
 		&.right {
 			right: 30px;
-			&:hover {
-				i {
-					background-image: url(../images/icons/icon-right-ban1.png);
-				}
-			}
 		}
 	}
 	.pager-bar {
