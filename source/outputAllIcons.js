@@ -10,7 +10,7 @@ fs.readFile('./sass/_font.scss', 'utf8', function (err, data) {
     console.log(cssfile);
     cssfile = cssfile.map(function (cls, i) {
         let line = !(i % 2) ? '' : '<li class="line"></li>';
-        return `<li><i class="if ${cls}"></i><span>.${cls}</span></li>\n${line}\n`;
+        return `<li><i class="if ${cls}"></i><span>.if.${cls}</span></li>\n${line}\n`;
     }).join('');
     fs.writeFile('./all-icon-fonts.html', `
 <!DOCTYPE html>
