@@ -10,7 +10,8 @@ fs.readFile('./sass/_font.scss', 'utf8', function (err, data) {
     console.log(cssfile);
     cssfile = cssfile.map(function (cls, i) {
         let line = !(i % 2) ? '' : '<li class="line"></li>';
-        return `<li><i class="if ${cls}"></i><span>.if.${cls}</span></li>\n${line}\n`;
+        return `<li><i class="if ${cls}"></i><span>.if.${cls}</span>
+                    <button class="btn" data-clipboard-text=".if.${cls}">复制</button></li>\n${line}\n`;
     }).join('');
     fs.writeFile('./all-icon-fonts.html', `
 <!DOCTYPE html>
@@ -19,6 +20,7 @@ fs.readFile('./sass/_font.scss', 'utf8', function (err, data) {
     <meta charset="UTF-8" />
     <title>All icons</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
     <style>
         .iconslist li{
             display:inline-block;
@@ -44,6 +46,9 @@ fs.readFile('./sass/_font.scss', 'utf8', function (err, data) {
     <ul class="iconslist">
     ${cssfile}
     </ul>
+    <script>
+        var clipboard = new Clipboard('.btn');
+    </script>
 </body>
 </html>
     `, function (err) {
