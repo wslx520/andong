@@ -27,7 +27,8 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('copy', function () {
-	return gulp.src(['./css/**/*','./images/**/*', './bootstrap/**/*', './*.html'], {
+	return gulp.src(['./css/**/*','./images/**/*', './bootstrap/**/*', './js/**/*',
+		'./data/*', './*.html'], {
 		base: './'
 	})
         .pipe(gulp.dest('../dist'));

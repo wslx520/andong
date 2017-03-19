@@ -36,17 +36,26 @@
 		margin-right: 7%;
 	}
 	.icons {
+		display: inline-block;
 		i {
 			margin-right: 15px;
+			font-size: 24px;
+			color: #bcbcbc;
+			&:hover {
+				color: #ea0000;
+			}
 		}
 	}
 }
-
+.topbar {
+	padding: 0 15px;
+}
 .detail-head {
 	border-top: 1px solid $black;
 	padding-top: 76px;
 	.row {
-		width: 80%;
+		/*width: 80%;*/
+		min-width: 1280px;
 		max-width: 1490px;
 		margin: auto;
 		padding-bottom: 100px;
@@ -56,18 +65,20 @@
 	@include aspect-ratio(1, 1);
 	position: relative;
 	max-height: 400px;
+	overflow: hidden;
 	.vm {
 		position: absolute;
-	background-color: #eee;
+		background-color: #fff;
 		left: 0;
 		top: 0;
-		right: 15px;
-		bottom: 15px;
+		right: 0;
+		bottom: 0;
 		/*width: 100%;
 		height: 100%;*/
 		text-align: center;
 		img {
 			margin: auto;
+			max-height: 100%;
 		}
 	}
 }
@@ -76,6 +87,14 @@
 	li {
 		display: inline-block;
 		width: 20%;
+		&.on {
+			span {
+				border-width: 2px;
+			}
+			i {
+				display: inline-block;
+			}
+		}
 	}
 	span {
 		display: inline-block;
@@ -91,12 +110,6 @@
 			bottom: 0;
 			position: absolute;
 		}
-		&.on {
-			border-width: 2px;
-			i {
-				display: inline-block;
-			}
-		}
 	}
 }
 
@@ -107,6 +120,8 @@
 	line-height: 36px;
 	font-size: 0;
 	border: 1px solid $black;
+	position: relative;
+	cursor: default;
 	em, i{
 		vertical-align: middle;
 		display: inline-block;
@@ -114,6 +129,36 @@
 	em {
 		font-size: 16px;
 		margin-right: 6px;
+	}
+	i {
+		font-size: 12px;
+		/*-webkit-text-size-adjust: none;*/
+		/*text-size-adjust: none;*/
+
+    	-webkit-transform: scale(0.9);
+	}
+	.list {
+		position: absolute;
+		left: -1px;
+		top: 36px;
+		width: 100%;
+		min-width: 120px;
+		background-color: #fff;
+		border: 1px solid $black;
+		display: none;
+		max-height: 360px;
+		overflow: auto;
+		li {
+			font-size: 14px;
+			padding: 0 12px;
+			cursor: pointer;
+			&:hover {
+				background-color: #f7f7f7;
+			}
+			&.on {
+				background-color: #f0f0f0;
+			}
+		}
 	}
 }
 
@@ -131,6 +176,11 @@
 	}
 	.labels {
 		font-size: 0;
+		.label-pro {
+
+		margin-right: 13px;
+		margin-bottom: 11px;
+		}
 	}
 	.label-pro {
 		height: 36px;
@@ -140,8 +190,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		font-size: 16px;
-		margin-right: 13px;
-		margin-bottom: 11px;
+		cursor: pointer;
 		&.on {
 			border-width: 2px;
 		}
@@ -151,6 +200,7 @@
 		display: inline-block;
 		border: 1px solid $black;
 		position: relative;
+		cursor: pointer;
 		i {
 			display: none;
 			position: absolute;
@@ -184,6 +234,7 @@
 		margin-right: 12px;
 		em {
 			height: 60px;
+			cursor: pointer;
 			line-height: 60px;
 			vertical-align: middle;
 			border: 1px solid $black;
@@ -209,15 +260,42 @@
 	height: 80px;
 	background-color: $black;
 	font-size: 0;
-	padding-left: 215px;
-	span {
-		font-size: 16px;
-		color: #E8E8E8;
-		text-align: center;
-		width: 110px;
-		display: inline-block;
-		&.on {
-			color: #fff;
+	.max-w {
+		margin: 0 15px;
+		height: 100%;
+	}
+	.tabs {
+		height: 80px;
+		span {
+			font-size: 16px;
+			color: #E8E8E8;
+			text-align: center;
+			width: 110px;
+			display: inline-block;
+			cursor: pointer;
+			&.on, &:hover {
+				color: #fff;
+				font-weight: 700;
+			}
+		}
+	}
+	.base-info {
+		height: 80px;
+		min-width: 500px;
+		display: none;
+		.price {
+			color: #bcbcbc;
+		}
+		.btn-buy {
+			width: 180px;
+			height: 40px;
+			background-color: #fff;
+			color: $black;
+		}
+	}
+	&.fixed-top {
+		.base-info {
+			display: block;
 		}
 	}
 }
@@ -255,6 +333,8 @@
 	}
 .more-detail {
 	background-color: #f3f3f3;
+	overflow: hidden;
+	padding-bottom: 90px;
 	h2 {
 		height: 162px;
 		line-height: 162px;
@@ -271,8 +351,19 @@
 		}
 	}
 }
+.promise-server {
+	height: 667px;
+	background: url(../images/promise-server.jpg) no-repeat center center;
+	color: #fff;
+	span {
+		em {
+			display: block;
+		}
+	}
+}
 @import "head";
 @import "pros";
 @import "foot";
 @import "icons";
+@import "icons-sprite";
 

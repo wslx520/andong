@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"code": 200,
+		"msg": "ok"
+	},
+	"data": {
+		"curPage": 1,
+		"number": 8,
+		"total": 100,
+		"dataList": [
+			{
+				"name": "2收纳柜",
+				"id": 1,
+				"pic": "images/product1.png",
+				"price": 43221,
+				"desc": "把色彩还原给三引人食欲的餐桌。"
+			},
+			{
+				"name": "收3纳柜",
+				"id": 1,
+				"pic": "images/product1.png",
+				"price": 33221,
+				"desc": "把色彩还原给三引人食欲的餐桌。"
+			},
+			{
+				"name": "收1纳柜",
+				"id": 1,
+				"pic": "images/product1.png",
+				"price": 13221,
+				"desc": "把色彩还原给三引人食欲的餐桌。"
+			},
+			{
+				"name": "收纳柜",
+				"id": 1,
+				"pic": "images/product1.png",
+				"price": 3221,
+				"desc": "把色彩还原给三引人食欲的餐桌。"
+			}
+		]
+	}
+}

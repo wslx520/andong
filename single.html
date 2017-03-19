@@ -25,14 +25,14 @@
 		<div class="info vm">
 				<span class="locate vm"><i class="icon-position"></i><em>房屋所在地</em></span>
 				<em class="line">|</em>
-				<span class="city vm"><em>成都</em><i class="icon-select-drop"></i></span>
+				<span class="city vm"><em>成都</em><i class="if i-pix-b-drop"></i></span>
 				<span class="login vm">
 					<i class="icon-user"></i><em>登录/注册</em>
 				</span>
 		</div>
 	</div>
 	<div class="single">                                                 
-		<div class="container">
+		<div class="max-w topbar">
 			<div class="title row">
 				<div class="col-md-6">
 					<h2>云团沙发升级版｜Cloud Sofa</h2>
@@ -40,12 +40,12 @@
 				</div>
 				<div class="col-md-6">
 					<div class="base-info vm">
-						<span class="price">￥1234</span>
+						<span class="price">￥12345</span>
 						<button class="btn-buy">包邮立购</button>
 						<span class="icons">
-							<i class="icon-heart"></i>
-							<i class="icon-gwc"></i>
-							<i class="icon-to"></i>
+							<i class="if i-love"></i>
+							<i class="if i-cart"></i>
+							<i class="if i-share"></i>
 						</span>
 					</div>
 				</div>
@@ -59,11 +59,11 @@
 					</div>
 					<div class="thumbs-list">
 						<ul>
-							<li><span class="vm on"><img src="images/detail-pic-small.jpg" alt="" /><i class="icon-pic-select"></i></span></li>
-							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" /><i class="icon-pic-select"></i></span></li>
-							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" /><i class="icon-pic-select"></i></span></li>
-							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" /><i class="icon-pic-select"></i></span></li>
-							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" /><i class="icon-pic-select"></i></span></li>
+							<li class="on"><span class="vm"><img src="images/detail-pic-small.jpg" alt="" data-big="images/pro1.jpg" /><i class="icon-pic-select"></i></span></li>
+							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" data-big="images/fang1.jpg" /><i class="icon-pic-select"></i></span></li>
+							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" data-big="images/fang2.jpg" /><i class="icon-pic-select"></i></span></li>
+							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" data-big="images/product1.png" /><i class="icon-pic-select"></i></span></li>
+							<li><span class="vm"><img src="images/detail-pic-small.jpg" alt="" data-big="images/pro1.jpg" /><i class="icon-pic-select"></i></span></li>
 						</ul>
 						
 					</div>
@@ -107,15 +107,33 @@
 									<em>-</em>
 									<span class="select-box">
 										<em>省</em>
-										<i class="icon-select"></i>
+										<i class="if i-pix-b"></i>
+										<input type="hidden" name="sheng" value="0" />
+										<ul class="list">
+											<li data-value="22">一个省</li>
+											<li data-value="12">一个省</li>
+											<li data-value="21">一个省</li>
+										</ul>
 									</span>
 									<span class="select-box">
 										<em>市</em>
-										<i class="icon-select"></i>
+										<i class="if i-pix-b"></i>
+										<input type="hidden" name="shi" value="0" />
+										<ul class="list">
+											<li data-value="22">一个市</li>
+											<li data-value="22">一个市</li>
+											<li data-value="22">一个市</li>
+										</ul>
 									</span>
 									<span class="select-box">
 										<em>县/区</em>
-										<i class="icon-select"></i>
+										<i class="if i-pix-b"></i>
+										<input type="hidden" name="qu" value="0" />
+										<ul class="list">
+											<li data-value="22">一个区</li>
+											<li data-value="22">一个区</li>
+											<li data-value="22">一个区</li>
+										</ul>
 									</span>
 									</div>
 								</td>
@@ -140,11 +158,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="tab-bar vm">
-			<span>参数</span>
-			<span class="on">场景搭配</span>
-			<span>细节</span>
-			<span>猜你喜欢</span>
+	    <div class="fixed-holder">
+	        <div class="true-fixed tab-bar" id="will-fixed">
+				<div class="max-w">
+					<div class="fl vm tabs">
+						<span>参数</span>
+						<span class="on">场景搭配</span>
+						<span>细节</span>
+						<span>猜你喜欢</span>
+						
+					</div>
+					<div class="fr base-info vm">
+						<span class="price">￥12345</span>
+						<button class="btn-buy">包邮立购</button>
+						<span class="icons">
+							<i class="if i-love"></i>
+							<i class="if i-cart"></i>
+							<i class="if i-share"></i>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="tc">
@@ -207,32 +241,52 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-3">
-    				<div class="icon"><i class="icon-gwc"></i></div>
+    				<div class="icon"><i class="icon-single i11"></i></div>
     				<b class="b">重量</b>
     				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
     			</div>
     			<div class="col-md-3">
-    				<div class="icon"><i class="icon-gwc"></i></div>
+    				<div class="icon"><i class="icon-single i12"></i></div>
     				<b class="b">重量</b>
     				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
     			</div>
     			<div class="col-md-3">
-    				<div class="icon"><i class="icon-gwc"></i></div>
+    				<div class="icon"><i class="icon-single i13"></i></div>
     				<b class="b">重量</b>
     				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
     			</div>
     			<div class="col-md-3">
-    				<div class="icon"><i class="icon-gwc"></i></div>
+    				<div class="icon"><i class="icon-single i14"></i></div>
     				<b class="b">重量</b>
     				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
     			</div>
     			<div class="col-md-3">
-    				<div class="icon"><i class="icon-gwc"></i></div>
+    				<div class="icon"><i class="icon-single i21"></i></div>
     				<b class="b">重量</b>
     				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
     			</div>
     			<div class="col-md-3">
-    				<div class="icon"><i class="icon-gwc"></i></div>
+    				<div class="icon"><i class="icon-single i22"></i></div>
+    				<b class="b">重量</b>
+    				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="icon"><i class="icon-single i23"></i></div>
+    				<b class="b">重量</b>
+    				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="icon"><i class="icon-single i24"></i></div>
+    				<b class="b">重量</b>
+    				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="icon"><i class="icon-single i31"></i></div>
+    				<b class="b">重量</b>
+    				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="icon"><i class="icon-single i32"></i></div>
     				<b class="b">重量</b>
     				<div class="det">单人23.5kg，双人42.5kg，脚墩11.5kg </div>
     			</div>
@@ -254,9 +308,9 @@
                           <span class="box">
                           	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
                           	<span class="icons">
-                          		<i class="icon-heart"></i>
-								<i class="icon-gwc"></i>
-								<i class="icon-to"></i>
+                          		<i class="if i-share"></i>
+								<i class="if i-cart"></i>
+								<i class="if i-share"></i>
                           	</span>
                           </span>
                       </a>
@@ -270,9 +324,9 @@
                           <span class="box">
                           	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
                           	<span class="icons">
-                          		<i class="icon-heart"></i>
-								<i class="icon-gwc"></i>
-								<i class="icon-to"></i>
+                          		<i class="if i-share"></i>
+								<i class="if i-cart"></i>
+								<i class="if i-share"></i>
                           	</span>
                           </span>
                       </a>
@@ -286,9 +340,9 @@
                           <span class="box">
                           	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
                           	<span class="icons">
-                          		<i class="icon-heart"></i>
-								<i class="icon-gwc"></i>
-								<i class="icon-to"></i>
+                          		<i class="if i-share"></i>
+								<i class="if i-cart"></i>
+								<i class="if i-share"></i>
                           	</span>
                           </span>
                       </a>
@@ -302,9 +356,9 @@
                           <span class="box">
                           	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
                           	<span class="icons">
-                          		<i class="icon-heart"></i>
-								<i class="icon-gwc"></i>
-								<i class="icon-to"></i>
+                          		<i class="if i-share"></i>
+								<i class="if i-cart"></i>
+								<i class="if i-share"></i>
                           	</span>
                           </span>
                       </a>
@@ -315,9 +369,30 @@
             <span class="left vm"><img src="images/jiaju-more.png" alt=""></span>
             <span class="right">
                 <em>更多核心家居单品供你挑剔</em>
-                <i class="icon-arrow-dots"></i>
+                <i class="if i-pix-r"></i>
             </span>
         </span>
+    </div>
+    <div class="group promise-server tc">
+    	<h2>我们承诺的服务</h2>
+    	<div class="max-w">
+    		<span>
+    			<i class="icon-honner i1"></i>
+    			<em>提供便捷快速省心的</em><b>入户安装</b>
+    		</span>
+    		<span>
+    			<i class="icon-honner i2"></i>
+    			<em>全国107个城市及地区</em><b>免邮配送</b>
+    		</span>
+    		<span>
+    			<i class="icon-honner i3"></i>
+    			<em>51精工大厂/100%手检</em><b>欧标制造</b>
+    		</span>
+    		<span>
+    			<i class="icon-honner i4"></i>
+    			<em>27国/百位设计大师的</em><b>签名正品</b>
+    		</span>
+    	</div>
     </div>
     </div>
     <div class="foot-links container-fluid ">

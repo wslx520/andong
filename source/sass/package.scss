@@ -231,101 +231,10 @@ body {
 .group {
     text-align: center;
 }
-.m1396 {
-	max-width: 1396px;
-	margin: auto;
-}
-.changjing2 {
-    max-width: 1494px;
-    margin: auto;
-    /*padding: 0 200px;*/
-    .mains, .subs {
-        font-size: 0;
-        li {
-            display: inline-block;
-        }
-    }
-    li a {
-    	position: relative;
-    }
-    .at {
-    	position: absolute;
-    	top: 50%;
-    	left: 0;
-    	width: 100%;
-    	margin-top: -12px;
-		.vm {
-			display: inline-block;
-		}
-    }
-    .mains {
-        li {
-            width: 33.3333333%;
-        }
-        .at {
-        	.vm {
-	        	font-size: 24px;
-	        	padding: 0 32px;
-	        	border: 1px solid $black;
-	        	em {
-	        		margin-left: 12px;
-	        	}
-        	}
-        	
-        }
-    }
-    .subs {
-        li {
-            width: 16.666666666%;
-        }
-        .at {
-        	.vv {
-	        	background-color: #fff;
-	        	border: 10px solid rgba(22, 19, 18, 0.11);
-	        	width: 124px;
-	        	height: 124px;
-	        	margin-top: -62px;
-	        	opacity: 0.9;	
-	        	display: inline-block;
-	        	padding-top: 18px;
-	        	img {
-	        		margin-bottom: 25px;
-	        	}
-        	}
-        	
-        	em {
-        		display: block;
-        		font-size: 18px;
-			}
-        }
-    }
-}
-
-
-.item-ban {
-    font-size: 0;
-    position: relative;
-    .bg {
-        display: block;
-    }
-    .front {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.bg-2017 {
-	.logo-play img {
-		margin-right: 28px;
-	}
-}
 
 .designers {
 	font-size: 0;
+	padding-bottom: 32px;
 	li {
 		width: 20%;
 		display: inline-block;
@@ -367,133 +276,53 @@ body {
 	}
 }
 
-.bankuai5 {
-	font-size: 0;
-	max-width: 1400px;
-	margin: 0 auto 133px;
-	.bk {
-		display: inline-block;
-		vertical-align: top;
-		width: 20%;
-		height: 395px;
-		border: 1px solid $black;
-		border-right: none;
-		.title {
-			h4 {
-				font-size: 16px;
-				margin-top: 67px;
-			}
-			h3 {
-				font-size: 30px;
-				margin: 30px auto 56px;
-			}
-		}
-		.content {
-			font-size: 14px;
-			color: #2D2421;
-			padding: 0 46px;
-			text-align: left;
-		}
-		&.a {
-			background: url(../images/A.png) no-repeat left bottom;
-			background-position:  -26px 228px;
-		}
-		&.b {
-			background: url(../images/B.png) no-repeat left bottom;
-			background-position:  -12px 228px;
-		}
-		&.c {
-			background: url(../images/C.png) no-repeat left bottom;
-			background-position:  0 228px;
-		}
-		&.d {
-			background: url(../images/D.png) no-repeat left bottom;
-			background-position:  -8px 228px;
-		}
-		&.e {
-			background: url(../images/E.png) no-repeat left bottom;
-			background-position:  -6px 228px;
-			border-right: 1px solid $black;
-		}
-	}
-}
-
-.who-we-are {
-	color: #fff;
-	.title {
-		font-size: 48px;
-		line-height: 1;
-		margin-top: 66px;
-		margin-bottom: 46px;
-	}
-	.p {
-		font-size: 18px;
-		line-height: 36px;
-		max-width: 840px;
-		margin: auto;
-	}
-	.btn-big {
-		margin-top: 66px;
-		width: 317px;
-		height: 85px;
-		display: inline-block;
-		line-height: 85px;
-		border: 1px solid #fff;
-		color: #fff;
-		font-size: 24px;
-	}
-}
-
-.bicons {
-	.bi {
-		.img {
-			height: 140px;
-			display: block;
-		}
-	}
-	.line {
-		display: inline-block;
-		height: 1px;
+.liucheng {
+	padding-bottom: 80px;
+	ul {
 		font-size: 0;
-		width: 104px;
-		border-top: 1px solid $black;
-		margin-bottom: 30px;
-		line-height: 0;
 	}
-	.txt {
-		max-width: 220px;
-		margin: auto;
-		font-size: 14px;
-		.small, .big {
-			line-height: 1;
+	li {
+		display: inline-block;
+		padding: 0 36px;
+		span {
+			display: block;
+			font-size: 16px;
 		}
-		.big {
-			margin-top: 20px;
-			font-size: 18px;
+		i {
+			font-size: 56px;
 		}
 	}
 }
 
-.row-media {
-	margin-bottom: 84px;
-}
-.col-media {
-	.logo {}
-	.txt {
-		line-height: 24px;
-		margin-top: 30px;
-		max-width: 200px;
-		margin: 30px auto 0;
+.shouhou {
+	padding-bottom: 100px;
+	ul {
+		font-size: 0;
 	}
-}
-.media-cont {
-	background-color: #f8f8f8;
-	margin-top: 162px;
-	.center-title {
-		h4 {
-			margin-bottom: 120px;
+	li {
+		display: inline-block;
+		width: 33.333333%;
+		padding: 0 36px;
+		span {
+			display: block;
+			/*font-size: 16px;*/
+			b {
+				display: block;
+				font-size: 18px;
+			}
+			em {
+				font-size: 14px;
+			}
+		}
+		i {
+			font-size: 64px;
 		}
 	}
+}
+
+
+.new-life {
+	border-top: 1px solid $black;
 }
 
 

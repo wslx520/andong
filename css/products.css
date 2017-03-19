@@ -126,10 +126,13 @@ body {
     .smallbar .left em {
       font-size: 18px; }
   .smallbar .right {
-    padding: 0 10px; }
+    padding: 0 40px; }
     .smallbar .right em {
       font-size: 16px;
       margin-right: 15px; }
+    .smallbar .right i {
+      font-size: 12px;
+      -webkit-transform: scale(0.9); }
   .smallbar.mid {
     margin-bottom: 68px; }
     .smallbar.mid .left, .smallbar.mid .right {
@@ -149,7 +152,8 @@ body {
 
 .wrap {
   min-width: 1280px;
-  width: 1920px; }
+  max-width: 1920px;
+  /*width: 1920px;*/ }
 
 .max-w {
   max-width: 1490px;
@@ -175,6 +179,12 @@ body {
   .btn-big i {
     font-size: 16px;
     margin-left: 36px; }
+
+.black {
+  background-color: #221815;
+  color: #fff; }
+  .black .center-title h2, .black .center-title h4 {
+    color: #fff; }
 
 @font-face {
   font-family: "iconfont";
@@ -742,7 +752,7 @@ i[class*="fl-"], i[class*="bfl-"] {
   background-color: #F2F2F2;
   height: 155px;
   text-align: center;
-  border-top: 1px solid #5C5A5A;
+  /*border-top: 1px solid #5C5A5A;*/
   padding-top: 15px; }
   .fenlei-menu.drop {
     background-color: #161312;
@@ -751,6 +761,16 @@ i[class*="fl-"], i[class*="bfl-"] {
     width: 100%;
     z-index: 10001;
     display: none; }
+    .fenlei-menu.drop .on .one-i i {
+      opacity: 1;
+      color: #fff; }
+    .fenlei-menu.drop .on .num {
+      border-top: 1px solid #5C5A5A;
+      display: block; }
+    .fenlei-menu.drop li a:hover {
+      color: #fff; }
+      .fenlei-menu.drop li a:hover .one-i i {
+        opacity: 1; }
   .fenlei-menu ul {
     font-size: 0;
     margin: auto; }
@@ -758,6 +778,10 @@ i[class*="fl-"], i[class*="bfl-"] {
     display: inline-block;
     margin: 0 18px;
     vertical-align: top; }
+    .fenlei-menu li a:hover {
+      text-decoration: none; }
+    .fenlei-menu li .if {
+      font-size: 36px; }
     .fenlei-menu li .one-i {
       display: block;
       height: 70px; }
@@ -782,10 +806,6 @@ i[class*="fl-"], i[class*="bfl-"] {
       line-height: 1; }
     .fenlei-menu li.on .one-i i {
       opacity: 1; }
-    .fenlei-menu li.on .two-i i:last-child {
-      display: inline-block; }
-    .fenlei-menu li.on .two-i i:first-child {
-      display: none; }
     .fenlei-menu li.on .num {
       border-top: 1px solid #5C5A5A;
       display: block; }
@@ -879,6 +899,11 @@ i[class*="fl-"], i[class*="bfl-"] {
   .loadmore em, .loadmore i {
     vertical-align: middle; }
 
+.products {
+  /*border-top: 1px solid #000;*/
+  /*margin-top: 100px;*/
+  padding-top: 100px; }
+
 .head-nav {
   height: 122px;
   background-color: #161312; }
@@ -953,25 +978,25 @@ i[class*="fl-"], i[class*="bfl-"] {
   .products li {
     display: inline-block;
     width: 25%; }
-  .products a {
+  .products .pro {
     display: inline-block;
     position: relative; }
-    .products a span {
+    .products .pro span {
       color: #221815;
       display: block;
       line-height: 1; }
-    .products a .name {
+    .products .pro .name {
       font-size: 16px; }
-    .products a .price {
+    .products .pro .price {
       font-size: 18px;
       margin: 14px auto; }
-    .products a .service {
+    .products .pro .service {
       font-size: 12px;
       padding-top: 15px;
       border-top: 1px solid #161312;
       max-width: 182px;
       margin: auto; }
-    .products a .box {
+    .products .pro .box {
       display: none;
       background-color: #fff;
       opacity: 0.9;
@@ -984,17 +1009,25 @@ i[class*="fl-"], i[class*="bfl-"] {
       top: 50%;
       margin-top: -100px;
       padding: 20px; }
-      .products a .box .txt {
+      .products .pro .box .todetail {
+        display: block; }
+      .products .pro .box a:hover {
+        text-decoration: none; }
+      .products .pro .box .txt {
         font-size: 12px;
         line-height: 24px; }
-      .products a .box .icons {
+      .products .pro .box .icons {
         border-top: 1px solid #161312;
         display: block;
         padding-top: 30px;
         margin-top: 30px; }
-        .products a .box .icons i {
-          margin: 0 12px; }
-    .products a:hover {
+        .products .pro .box .icons i {
+          margin: 0 12px;
+          font-size: 24px;
+          color: #bcbcbc; }
+          .products .pro .box .icons i:hover {
+            color: #ea0000; }
+    .products .pro:hover {
       text-decoration: none; }
   .products li:hover .box {
     display: block; }
@@ -1113,8 +1146,3 @@ i[class*="icon-"] {
   background-image: url(../images/icons/icon-video.png);
   width: 60px;
   height: 60px; }
-
-.products {
-  border-top: 1px solid #000;
-  /*margin-top: 100px;*/
-  padding-top: 100px; }

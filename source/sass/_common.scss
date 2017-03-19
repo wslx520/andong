@@ -103,10 +103,14 @@ body {
         }
     }
     .right {
-        padding: 0 10px;
+        padding: 0 40px;
         em {
             font-size: 16px;
             margin-right: 15px;
+        }
+        i {
+        	font-size: 12px;
+    		-webkit-transform: scale(0.9);
         }
     }
     &.mid {
@@ -135,7 +139,8 @@ body {
 
 .wrap {
 	min-width: 1280px;
-	width: 1920px;
+	max-width: 1920px;
+	/*width: 1920px;*/
 }
 
 .max-w {
@@ -170,5 +175,14 @@ body {
 	}
 }
 
+.black {
+	background-color: #221815;
+	color: #fff;
+	.center-title {
+		h2, h4 {
+			color: #fff;
+		}
+	}
+}
 
 @import "font";

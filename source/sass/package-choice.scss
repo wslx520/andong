@@ -1,0 +1,101 @@
+@import "base";
+@import "common";
+
+
+
+body {
+	color: $font;
+}
+
+.choice {
+	padding: 90px 108px;
+}
+.thumbs-list {
+	font-size: 0;
+	li {
+		display: inline-block;
+		width: 25%;
+	}
+	span {
+		display: inline-block;
+		max-width: 294px;
+		padding: 24px 24px 60px;                                                              
+		/*height: 136px;*/
+		/*@include aspect-ratio(1, 1);*/
+		border: 1px solid $black;
+		margin-right: 15px;
+		position: relative;
+		.title {
+			font-size: 14px;
+			text-align: center;
+			display: block;
+		}
+		i {
+			display: none;
+			right: 0;
+			bottom: 0;
+			position: absolute;
+		}
+		&.on {
+			border-width: 2px;
+			i {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.table-choice {
+	margin-top: 36px;
+	width: 100%;
+	th, td {
+		border: 1px solid $black;
+		text-align: center;
+	}
+	th {
+		text-align: center;
+		font-weight: 400;
+		padding: 28px 0;
+		.if {
+			font-size: 32px;
+		}
+		.span {
+			em {
+				display: block;
+			}
+		}
+	}
+	td {
+		padding: 20px 0;
+		.in {
+			position: relative;
+		}
+		.edit {
+			border: none;
+			padding: 0;
+			background: transparent;
+			position: absolute;
+			right: 6px;
+			top: 50%;
+			margin-top: -16px;
+			cursor: pointer;
+			.if {
+				line-height: 1;
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+.modal {
+	/*position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;*/
+}
+
+@import "icons";
+@import "pros";
+@import "head";
+@import "foot";
