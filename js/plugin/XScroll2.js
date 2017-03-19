@@ -27,8 +27,13 @@ var id=function (id) {
 		return defaults;
 	},
 	Bind=function(object, fun) {
+		var args = arguments.length ? Array.prototype.slice.call(arguments,2) : [];
 		return function() {
-			return fun.apply(object, Array.prototype.slice.call(arguments,2));
+			var temp = args.slice();
+			if (arguments.length) {
+				for (var i = 0; i < arguments.length; temp.push(arguments[i++]));
+			}
+			return fun.apply(object, temp);
 		}
 	},
 	On=(function(){
@@ -88,7 +93,7 @@ XScroll2.main = function(elm,option) {
 	self._timer = null;
 	/* 初始化完毕 */
 	
-	self.init();	
+	self.init();
 }
 XScroll2.prototype = {
 	init:function(){
@@ -96,7 +101,7 @@ XScroll2.prototype = {
 			self = this;
 		/*	*/
 		var posi = (self.defaults.how==0) ? "position:absolute;" : '',
-			fl = (self.direct =='left') ? "float:left;" : "",
+			fl = (self.direct =='left') ? "float:left; width:"+self.step+'px;' : "",
 			W = (self.direct =='left') ? (2*self.step+'px') : null,
 			H = (self.direct =='top') ? (2*self.step+'px') : null,
 			css = fl+"display:none; z-index:5;"+posi;
@@ -167,6 +172,7 @@ XScroll2.prototype = {
 	},
 	run:function(elm,callback) {
 		var self = this;
+		console.log(self)
 		var effects = [
 			function(){
 				self.curS.style.zIndex = '5';

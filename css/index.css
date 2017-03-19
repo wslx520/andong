@@ -567,9 +567,11 @@ body {
     left: 0;
     width: 100%; }
     .banners .pics li {
-      /*position: absolute;*/ }
+      /*position: absolute;*/
+      /*width: 1350px;*/ }
     .banners .pics li, .banners .pics img {
-      display: block; }
+      display: block;
+      max-height: 100%; }
   .banners .nav {
     position: absolute;
     top: 50%;
@@ -651,6 +653,8 @@ body {
     margin-top: -12px; }
     .changjing2 .at .vm {
       display: inline-block; }
+  .changjing2 .if {
+    font-size: 32px; }
   .changjing2 .mains li {
     width: 33.3333333%; }
   .changjing2 .mains .at .vm {
@@ -775,7 +779,7 @@ body {
     max-width: 840px;
     margin: auto; }
   .who-we-are .btn-big {
-    margin-top: 66px;
+    margin-top: 44px;
     width: 317px;
     height: 85px;
     display: inline-block;

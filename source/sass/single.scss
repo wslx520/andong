@@ -266,16 +266,20 @@
 	}
 	.tabs {
 		height: 80px;
-		span {
+		.on {
+			color: #fff;
+			font-weight: 700;
+		}
+		a {
 			font-size: 16px;
 			color: #E8E8E8;
 			text-align: center;
 			width: 110px;
 			display: inline-block;
 			cursor: pointer;
-			&.on, &:hover {
+			&:hover {
 				color: #fff;
-				font-weight: 700;
+				text-decoration: none;
 			}
 		}
 	}
@@ -355,9 +359,23 @@
 	height: 667px;
 	background: url(../images/promise-server.jpg) no-repeat center center;
 	color: #fff;
+	overflow: hidden;
+	h2 {
+		margin-top: 150px;
+		margin-bottom: 120px;
+		line-height: 1;
+	}
 	span {
+		display: inline-block;
+		margin: 0 30px;
 		em {
 			display: block;
+			text-align: center;
+			font-size: 14px;
+		}
+		b {
+			font-size: 28px;
+			font-weight: 400;
 		}
 	}
 }

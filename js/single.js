@@ -13,7 +13,7 @@ define(function (require, exports, module) {
             }
         });
 
-    $('#will-fixed .tabs').on('click', 'span', function (e) {
+    $('#will-fixed .tabs').on('click', 'a', function (e) {
     	$(this).addClass('on').siblings().removeClass('on');
     });
 	var selects = $('.select-box');

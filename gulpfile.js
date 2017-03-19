@@ -31,7 +31,7 @@ gulp.task('copy', function () {
 		'./data/*', './*.html'], {
 		base: './'
 	})
-        .pipe(gulp.dest('../dist'));
+        .pipe(gulp.dest('../html201703'));
 
 });
 

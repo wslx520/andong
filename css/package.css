@@ -661,8 +661,7 @@ body {
 
 .shuoming {
   background-color: #f7f7f7;
-  text-align: center;
-  height: 214px; }
+  text-align: center; }
   .shuoming .col {
     float: left;
     width: 25%;
@@ -678,23 +677,35 @@ body {
     display: inline-block;
     margin: 10px auto; }
   .shuoming .p {
-    font-size: 14px; }
+    font-size: 14px;
+    height: 100px; }
 
 .diban {
   position: relative;
-  height: 840px;
+  max-height: 840px;
   background-color: #f7f7f7; }
+  .diban .stuff {
+    display: none;
+    position: relative; }
+    .diban .stuff.on {
+      display: block; }
   .diban .bg {
     background: url(../images/diban.jpg) no-repeat 70% 0;
-    height: 100%; }
-  .diban .front {
-    width: 100%;
     height: 100%;
+    width: 100%;
     left: 0;
     top: 0;
-    position: absolute;
+    z-index: 1;
+    position: absolute; }
+  .diban .max-w {
+    padding: 0 15px; }
+  .diban .front {
+    position: relative;
+    z-index: 222;
     text-align: left;
-    padding-top: 150px; }
+    padding-top: 150px;
+    padding-bottom: 120px;
+    min-height: 600px; }
     .diban .front .sup-title {
       font-size: 24px; }
     .diban .front .title {
@@ -724,17 +735,17 @@ body {
       .diban .front .about .col .sub {
         font-size: 14px;
         line-height: 1; }
-    .diban .front .table-stuff {
-      margin: 130px auto 0; }
-      .diban .front .table-stuff td {
-        width: 215px;
-        height: 60px;
-        text-align: center;
-        border: 1px solid #000; }
-        .diban .front .table-stuff td:hover {
-          background-color: #000;
-          color: #fff;
-          cursor: default; }
+  .diban .table-stuff {
+    margin: 0 auto 60px; }
+    .diban .table-stuff td {
+      width: 215px;
+      height: 60px;
+      text-align: center;
+      border: 1px solid #000; }
+      .diban .table-stuff td.on, .diban .table-stuff td:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: default; }
 
 .group {
   text-align: center; }

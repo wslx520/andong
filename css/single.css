@@ -978,16 +978,19 @@ i[class*="fl-"], i[class*="bfl-"] {
     height: 100%; }
   .tab-bar .tabs {
     height: 80px; }
-    .tab-bar .tabs span {
+    .tab-bar .tabs .on {
+      color: #fff;
+      font-weight: 700; }
+    .tab-bar .tabs a {
       font-size: 16px;
       color: #E8E8E8;
       text-align: center;
       width: 110px;
       display: inline-block;
       cursor: pointer; }
-      .tab-bar .tabs span.on, .tab-bar .tabs span:hover {
+      .tab-bar .tabs a:hover {
         color: #fff;
-        font-weight: 700; }
+        text-decoration: none; }
   .tab-bar .base-info {
     height: 80px;
     min-width: 500px;
@@ -1045,9 +1048,22 @@ i[class*="fl-"], i[class*="bfl-"] {
 .promise-server {
   height: 667px;
   background: url(../images/promise-server.jpg) no-repeat center center;
-  color: #fff; }
-  .promise-server span em {
-    display: block; }
+  color: #fff;
+  overflow: hidden; }
+  .promise-server h2 {
+    margin-top: 150px;
+    margin-bottom: 120px;
+    line-height: 1; }
+  .promise-server span {
+    display: inline-block;
+    margin: 0 30px; }
+    .promise-server span em {
+      display: block;
+      text-align: center;
+      font-size: 14px; }
+    .promise-server span b {
+      font-size: 28px;
+      font-weight: 400; }
 
 .head-nav {
   height: 122px;
