@@ -47,6 +47,7 @@ body {
 
 .table-choice {
 	margin-top: 36px;
+	margin-bottom: 86px;
 	width: 100%;
 	th, td {
 		border: 1px solid $black;
@@ -85,6 +86,16 @@ body {
 			}
 		}
 	}
+}
+
+.btn-black {	
+	width: 488px;
+	height: 75px;
+	background: #000;
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	border-radius: 0;
 }
 
 .modal-pinpai {
@@ -142,13 +153,37 @@ body {
 		border-top: none;
 		padding-bottom: 64px;
 		.btn-primary {
-			width: 488px;
+		}
+	}
+
+	.text {
+		width: 488px;
+		height: 75px;
+		border: 1px solid $black;
+			font-size: 18px;
+			padding: 0 18px;
+	}
+	.one, .two {
+		margin-top: 20px;
+	}
+	.two {
+		font-size: 0;
+		.text {
+			width: 295px;
+			margin-right: 18px;
+		}
+		.el {
+			display: inline-block;
 			height: 75px;
-			background: #000;
-			color: #fff;
-			font-size: 24px;
-			border: none;
-			border-radius: 0;
+			width: 174px;
+			border: 1px solid $black;
+			button {
+				font-size: 18px;
+				background: transparent;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
 		}
 	}
 }

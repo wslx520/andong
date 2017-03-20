@@ -1,0 +1,124 @@
+@import "base";
+@import "common";
+
+
+
+body {
+	color: $font;
+}
+
+.big-banner {
+	height: 720px;
+	background-color: #dadad9;
+	position: relative;
+	.desc {
+		float: left;
+		max-width: 760px;
+		text-align: left;
+		padding-left: 180px;
+	}
+	.designer {
+		position: absolute;
+		top: 0;
+		right: 10%;
+	}
+	.name {
+		font-size: 36px;
+		line-height: 1;
+		margin-top: 185px;
+	}
+	.info {
+		font-size: 14px;
+		display: inline-block;
+		border: 1px solid $black;
+		margin-top: 15px;
+		margin-bottom: 58px;
+		.zili, .duty {
+			display: inline-block;
+		}
+		.zili {
+			background: $black;
+			color: #fff;
+			padding: 6px 13px;
+		}
+		.duty {
+			padding: 6px 16px;
+		}
+	}
+	.p {
+		line-height: 36px;
+		font-size: 16px;
+	}
+	.btn-yuyue {
+		height: 70px;
+		width: 226px;
+		background-color: transparent;
+		border: 1px solid $black;
+		em {
+			font-size: 18px;
+		}
+		.if {
+			font-size: 12px;
+			-webkit-transform: scale(0.9);
+			margin-left: 35px;
+		}
+	}
+}
+.works-wrap {
+	.main-title {
+		.title {
+			font-size: 36px;
+		}
+		.works-tab {
+			font-size: 14px;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				&.on {
+					em {
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
+.works {
+	border-top: 1px solid $black;
+	.list {
+		max-width: 1500px;
+		margin: auto;
+	}
+	li.work {
+		border-bottom: 1px solid #e5e5e5;
+		padding-bottom: 64px;
+		padding-top: 64px;
+		h2 {
+			font-size: 24px;
+		}
+		.survey {
+			font-size: 12px;
+		}
+		.p {
+			font-size: 16px;
+		}
+		.pics {
+			font-size: 0;
+			overflow: hidden;
+			ul {
+
+				margin-right: -28px;
+			}
+			li {
+				width: 25%;
+				display: inline-block;
+				padding-right: 28px;
+			}
+		}
+	}
+}
+
+@import "icons";
+@import "pros";
+@import "head";
+@import "foot";

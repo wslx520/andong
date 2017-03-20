@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>套餐选择页</title>
+	<title>设计师</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-	<link rel="stylesheet" href="css/package-choice.css" />
+	<link rel="stylesheet" href="css/designer.css" />
 </head>
 <body>
 <div class="wrap">
@@ -15,10 +15,10 @@
 		<div class="nav-list">
 			<ul>
 				<li><a href="index.html">首页</a></li>
-				<li class="on"><a href="#">套餐</a></li>
+				<li><a href="#">套餐</a></li>
 				<li><a href="#">荟装</a></li>
 				<li><a href="productlist.html">全球家居</a></li>
-				<li><a href="#">设计师</a></li>
+				<li class="on"><a href="#">设计师</a></li>
 				<li><a href="#">HOME+</a></li>
 			</ul>
 		</div>
@@ -31,58 +31,53 @@
 				</span>
 		</div>
 	</div>
-	<div class="max-w choice">
-		<div class="thumbs-list">
-			<ul>
-				<li><span class="vm on"><em class="title">北欧风格</em><img src="images/choice-pic.jpg" alt=""><i class="icon-pic-select"></i></span></li>
-				<li><span class="vm"><em class="title">英伦风格</em><img src="images/choice-pic.jpg" alt=""><i class="icon-pic-select"></i></span></li>
-				<li><span class="vm"><em class="title">美式风格</em><img src="images/choice-pic.jpg" alt=""><i class="icon-pic-select"></i></span></li>
-				<li><span class="vm"><em class="title">乡村风格</em><img src="images/choice-pic.jpg" alt=""><i class="icon-pic-select"></i></span></li>
-			</ul>
-			
-		</div>
-		<table class="table-choice">
-			<thead>
-				<tr>
-					<th>北欧风格</th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-keting"></i><em>客厅</em></span></span>
-					</th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-zhuwo"></i><em>主卧</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-chufang"></i><em>厨房</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-wsj"></i><em>卫生间</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-canting"></i><em>餐厅</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-ertong"></i><em>儿童房</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-shufang"></i><em>书房</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-yangtai"></i><em>阳台</em></span></span></th>
-					<th>
-						<span class="span"><span class="border"><i class="if i-xuanguan"></i><em>玄关</em></span></span></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>地板 / 地砖</td>
-					<td colspan="9">
-						<div class="in">
-							<em class="txt">大自然 / 马可波罗</em>
-							<span class="edit" data-toggle="modal" data-target="#editModal"><i class="if i-edit"></i></span>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="tonext tc">
-			<button class="btn-black" data-toggle="modal" data-target="#step2Modal">下一步，填写个人信息</button>
+	<div class="full-width">
+		<div class="big-banner">
+			<div class="max-w with-bg">
+				<div class="desc">
+					<h2 class="name">舒曼 |  Summer</h2>
+					<span class="info">
+        				<em class="zili">资历15年</em><em class="duty">设计总监</em>
+        			</span>
+        			<p class="p">
+        				香港室内设计协会执行委员成员，香港室内设计协会专业成员，麦麦廊创办人 （配饰服务）。近年被The Andrew Martin International Award选为全球50名国际著名室内设计师之一，是被“创意中国”评为近年中国三十位顶尖室内设计师中唯一的女性。
+        			</p>
+        			<button class="btn-yuyue">
+        				<em>马上预约</em>
+        				<i class="if i-pix-r"></i>
+        			</button>
+				</div>
+				<img src="images/shuman.jpg" alt="" class="designer" />
+			</div>
 		</div>
 	</div>
-
+	<div class="works-wrap">
+		<div class="tc main-title">
+			<h2 class="title">设计作品</h2>
+			<ul class="works-tab">
+				<li class="on"><em>全部</em>（15）</li>
+				<li><em>家装</em>（13）</li>
+				<li><em>工装</em>（2）</li>
+			</ul>
+		</div>
+		<div class="works" id="works">
+			<ul class="list">
+				<li class="work">
+					<h2>新中式 | 简  奢</h2>
+					<div class="survey">175㎡   |   中式   |   19图   |   12794浏览</div>
+					<p class="p">宁静致远、简洁大气的新中式风格，追求的并非形式上的中式元素的简单运用，也并非材质上的简单堆砌，而是气质上的大器天成、顺应天地自然的洒脱天然。</p>
+					<div class="pics">
+						<ul>
+							<li><img src="images/work-pic.jpg" alt="" /></li>
+							<li><img src="images/work-pic.jpg" alt="" /></li>
+							<li><img src="images/work-pic.jpg" alt="" /></li>
+							<li><img src="images/work-pic.jpg" alt="" /></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
     <div class="foot-links container-fluid ">
     	<div class="col-md-2">
     		<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
