@@ -113,55 +113,6 @@
 	}
 }
 
-.select-box {
-	display: inline-block;
-	height: 36px;
-	padding: 0 20px;
-	line-height: 36px;
-	font-size: 0;
-	border: 1px solid $black;
-	position: relative;
-	cursor: default;
-	em, i{
-		vertical-align: middle;
-		display: inline-block;
-	}
-	em {
-		font-size: 16px;
-		margin-right: 6px;
-	}
-	i {
-		font-size: 12px;
-		/*-webkit-text-size-adjust: none;*/
-		/*text-size-adjust: none;*/
-
-    	-webkit-transform: scale(0.9);
-	}
-	.list {
-		position: absolute;
-		left: -1px;
-		top: 36px;
-		width: 100%;
-		min-width: 120px;
-		background-color: #fff;
-		border: 1px solid $black;
-		display: none;
-		max-height: 360px;
-		overflow: auto;
-		li {
-			font-size: 14px;
-			padding: 0 12px;
-			cursor: pointer;
-			&:hover {
-				background-color: #f7f7f7;
-			}
-			&.on {
-				background-color: #f0f0f0;
-			}
-		}
-	}
-}
-
 .table-product {
 	th, td {
 		vertical-align: top;

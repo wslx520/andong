@@ -186,6 +186,50 @@ body {
   .black .center-title h2, .black .center-title h4 {
     color: #fff; }
 
+.select-box {
+  display: inline-block;
+  height: 36px;
+  padding: 0 20px;
+  line-height: 36px;
+  font-size: 0;
+  border: 1px solid #161312;
+  position: relative;
+  cursor: default; }
+  .select-box .prefix {
+    font-size: 16px;
+    display: inline-block;
+    color: #666; }
+  .select-box em, .select-box i {
+    vertical-align: middle;
+    display: inline-block; }
+  .select-box em {
+    font-size: 16px;
+    margin-right: 6px; }
+  .select-box i {
+    font-size: 12px;
+    /*-webkit-text-size-adjust: none;*/
+    /*text-size-adjust: none;*/
+    -webkit-transform: scale(0.9); }
+  .select-box .list {
+    position: absolute;
+    left: -1px;
+    top: 36px;
+    width: 100%;
+    min-width: 120px;
+    background-color: #fff;
+    border: 1px solid #161312;
+    display: none;
+    max-height: 360px;
+    overflow: auto; }
+    .select-box .list li {
+      font-size: 14px;
+      padding: 0 12px;
+      cursor: pointer; }
+      .select-box .list li:hover {
+        background-color: #f7f7f7; }
+      .select-box .list li.on {
+        background-color: #f0f0f0; }
+
 @font-face {
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_l8ja4zrmdcp7gb9.eot?t=1489567636743");

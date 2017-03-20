@@ -87,12 +87,70 @@ body {
 	}
 }
 
-.modal {
-	/*position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;*/
+.modal-pinpai {
+	.i-close {
+		font-size: 32px;
+	}
+	.modal-content {
+		border-radius: 0;
+		text-align: center;
+	}
+	.modal-header {
+		border-bottom: none;
+	}
+	.title {
+		font-size: 16px;
+	}
+	.class {
+		font-size: 36px;
+		margin-bottom: 52px;
+		line-height: 1;
+	}
+	.select-box {
+		width: 488px;
+		height: 75px;
+		padding: 0 24px;
+		.prefix {
+			width: 76px;
+			text-align: center;
+		}
+		em, .prefix {
+			font-size: 18px;
+		}
+		em {
+			width: 333px;
+			padding: 0 18px;
+			text-align: left;
+		}
+		.list {
+			width: 374px;
+			right: 0;
+			top: 76px;
+			left: auto;
+			li {
+				line-height: 70px;
+				height: 70px;
+				text-align: left;
+				padding-left: 18px;
+				padding-right: 18px;
+				font-size: 18px;
+			}
+		}
+	}
+	.modal-footer {
+		text-align: center;
+		border-top: none;
+		padding-bottom: 64px;
+		.btn-primary {
+			width: 488px;
+			height: 75px;
+			background: #000;
+			color: #fff;
+			font-size: 24px;
+			border: none;
+			border-radius: 0;
+		}
+	}
 }
 
 @import "icons";

@@ -131,27 +131,29 @@
     	</div>
     </div>
     <!-- Modal -->
-<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade bs-example-modal-sm modal-pinpai" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="if i-close"></i></button>
       </div>
       <div class="modal-body">
         <div class="title">定制您想要的品牌</div>
         <h2 class="class">地板 / 地砖</h2>
-        <div class="dropdown">
-		  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-		    选择品牌
-		    <span class="caret"></span>
-		  </a>
-
-		  <ul class="dropdown-menu" aria-labelledby="dLabel">
-		    <li>大自然</li>
-		    <li>圣象</li>
-		    <li>马可波罗</li>
-		  </ul>
-		</div>
+        <form action="">
+        	
+			<span class="select-box vm">
+				<span class="prefix">选择品牌</span>
+				<em>大自然</em>
+				<i class="if i-pix-b"></i>
+				<input type="hidden" name="sheng" value="0" />
+				<ul class="list">
+					<li data-value="22">圣象</li>
+					<li data-value="12">大自然</li>
+					<li data-value="21">马可波罗</li>
+				</ul>
+			</span>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary">确认选择</button>
