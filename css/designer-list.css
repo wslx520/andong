@@ -607,277 +607,92 @@ body {
 body {
   color: #221815; }
 
-.top-bar {
-  height: 114px; }
-  .top-bar .vm {
+.big-banner {
+  background-color: #dadad9; }
+
+.designers-wrap .main-title .title {
+  font-size: 36px;
+  line-height: 1;
+  margin-top: 68px;
+  margin-bottom: 38px; }
+
+.designers-wrap .main-title .designers-tab {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 54px; }
+  .designers-wrap .main-title .designers-tab li {
     display: inline-block;
-    height: 114px; }
-  .top-bar .big {
-    font-size: 30px;
-    margin-right: 44px; }
-  .top-bar .small {
-    font-size: 16px; }
-  .top-bar .fr {
-    height: 114px; }
-
-.banners {
-  position: relative;
-  overflow: hidden;
-  position: relative; }
-  .banners:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 41.25%; }
-  .banners > .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  .banners .pics {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; }
-    .banners .pics li {
-      /*position: absolute;*/ }
-    .banners .pics li, .banners .pics img {
-      display: block; }
-  .banners .nav {
-    position: absolute;
-    top: 50%;
-    width: 52px;
-    height: 100px;
-    margin-top: -50px;
-    opacity: 0.8;
-    background-color: #161312;
-    line-height: 100px;
-    text-align: center;
-    display: block; }
-    .banners .nav i {
-      font-size: 32px;
-      color: #fff; }
-    .banners .nav:hover i {
-      color: #fabe00; }
-    .banners .nav.left {
-      left: 30px; }
-    .banners .nav.right {
-      right: 30px; }
-  .banners .pager-bar {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; }
-  .banners .pager {
-    background-color: #161312;
-    opacity: 0.8;
-    font-size: 0;
-    padding: 9px 15px;
-    display: inline-block;
-    margin: auto; }
-    .banners .pager li {
-      display: inline-block;
-      background-color: #fff;
-      width: 9px;
-      height: 9px;
-      margin: 0 5px;
-      border-radius: 50%; }
-      .banners .pager li.current, .banners .pager li.on {
-        background-color: #fabe00; }
-
-.rooms {
-  position: absolute;
-  left: 0;
-  bottom: 27px;
-  width: 100%;
-  text-align: center;
-  font-size: 0; }
-  .rooms .span {
-    height: 110px;
-    width: 86px;
-    transition: all 0.3s;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.9);
-    vertical-align: middle;
-    cursor: pointer; }
-    .rooms .span .border {
-      padding-top: 22px;
-      height: 100%;
-      /*background-color: rgba(255, 255, 255, 0.9);*/
-      display: block; }
-    .rooms .span i {
-      font-size: 32px; }
-    .rooms .span em {
-      display: block;
-      font-size: 14px; }
-    .rooms .span:hover {
-      background-color: transparent;
-      border: 10px solid rgba(0, 0, 0, 0.2);
-      width: 100px; }
-      .rooms .span:hover .border {
-        padding-top: 12px;
-        background-color: rgba(255, 255, 255, 0.9); }
-
-.shuoming {
-  background-color: #f7f7f7;
-  text-align: center; }
-  .shuoming .col {
-    float: left;
-    width: 25%;
-    padding: 0 46px; }
-  .shuoming .title {
-    font-size: 20px;
-    margin-top: 20px; }
-  .shuoming .line {
-    width: 32px;
-    height: 1px;
-    font-size: 0;
-    background-color: #000;
-    display: inline-block;
-    margin: 10px auto; }
-  .shuoming .p {
-    font-size: 14px;
-    height: 100px; }
-
-.diban {
-  position: relative;
-  max-height: 840px;
-  background-color: #f7f7f7; }
-  .diban .stuff {
-    display: none;
-    position: relative; }
-    .diban .stuff.on {
-      display: block; }
-  .diban .bg {
-    background: url(../images/diban.jpg) no-repeat 70% 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    position: absolute; }
-  .diban .max-w {
-    padding: 0 15px; }
-  .diban .front {
-    position: relative;
-    z-index: 222;
-    text-align: left;
-    padding-top: 150px;
-    padding-bottom: 120px;
-    min-height: 600px; }
-    .diban .front .sup-title {
-      font-size: 24px; }
-    .diban .front .title {
-      font-size: 32px; }
-    .diban .front .p {
-      font-size: 14px;
-      line-height: 24px;
-      border: 1px solid #000;
-      border-left: none;
-      border-right: none;
-      max-width: 636px;
-      padding: 27px 0;
-      color: #666; }
-    .diban .front .about .col {
-      display: inline-block;
-      width: 280px;
-      margin-right: 60px;
-      float: left;
-      padding-top: 46px; }
-      .diban .front .about .col .sup {
-        font-size: 12px;
-        line-height: 1; }
-      .diban .front .about .col .h2 {
-        font-size: 24px;
-        line-height: 1;
-        margin: 10px 0; }
-      .diban .front .about .col .sub {
-        font-size: 14px;
-        line-height: 1; }
-  .diban .table-stuff {
-    margin: 0 auto 60px; }
-    .diban .table-stuff td {
-      width: 215px;
-      height: 60px;
-      text-align: center;
-      border: 1px solid #000; }
-      .diban .table-stuff td.on, .diban .table-stuff td:hover {
-        background-color: #000;
-        color: #fff;
-        cursor: default; }
-
-.group {
-  text-align: center; }
+    margin: 0 15px; }
+    .designers-wrap .main-title .designers-tab li.on em {
+      font-weight: 700; }
 
 .designers {
-  font-size: 0;
-  padding-bottom: 32px; }
-  .designers li {
-    width: 20%;
-    display: inline-block; }
-    .designers li img {
-      display: block; }
-    .designers li .name, .designers li .info {
-      display: block; }
-    .designers li .name {
-      color: #221815;
-      padding: 25px 0 16px; }
-      .designers li .name em {
-        line-height: 1; }
-      .designers li .name .cn {
-        font-size: 18px; }
-      .designers li .name .en {
-        font-size: 16px; }
-    .designers li .info {
+  border-top: 1px solid #161312; }
+  .designers .list {
+    max-width: 1500px;
+    margin: 0 auto 84px; }
+  .designers li.designer {
+    margin-top: 42px;
+    background-color: #dbdbd9;
+    height: 430px; }
+    .designers li.designer .photo {
+      position: relative;
+      max-width: 630px;
+      width: 40%;
+      padding-left: 1%;
+      display: inline-block; }
+      .designers li.designer .photo img {
+        position: absolute;
+        right: 0;
+        top: 0; }
+    .designers li.designer .detail {
+      display: inline-block;
+      max-width: 680px;
+      padding-left: 1%; }
+    .designers li.designer .desc {
+      text-align: left; }
+    .designers li.designer .name {
+      font-size: 30px;
+      line-height: 1;
+      margin-top: 185px; }
+    .designers li.designer .info {
       font-size: 14px;
       display: inline-block;
-      border: 1px solid #161312; }
-      .designers li .info .zili, .designers li .info .duty {
+      border: 1px solid #161312;
+      margin-top: 15px;
+      margin-bottom: 58px; }
+      .designers li.designer .info .zili, .designers li.designer .info .duty {
         display: inline-block; }
-      .designers li .info .zili {
+      .designers li.designer .info .zili {
         background: #161312;
         color: #fff;
         padding: 6px 13px; }
-      .designers li .info .duty {
+      .designers li.designer .info .duty {
         padding: 6px 16px; }
-
-.liucheng {
-  padding-bottom: 80px; }
-  .liucheng ul {
-    font-size: 0; }
-  .liucheng li {
-    display: inline-block;
-    padding: 0 36px; }
-    .liucheng li span {
-      display: block;
+    .designers li.designer .p {
+      line-height: 36px;
       font-size: 16px; }
-    .liucheng li i {
-      font-size: 56px; }
-
-.shouhou {
-  padding-bottom: 100px; }
-  .shouhou ul {
-    font-size: 0; }
-  .shouhou li {
-    display: inline-block;
-    width: 33.333333%;
-    padding: 0 36px; }
-    .shouhou li span {
-      display: block;
-      /*font-size: 16px;*/ }
-      .shouhou li span b {
-        display: block;
+    .designers li.designer .btn-yuyue {
+      height: 70px;
+      width: 226px;
+      background-color: transparent;
+      border: 1px solid #161312; }
+      .designers li.designer .btn-yuyue em {
         font-size: 18px; }
-      .shouhou li span em {
-        font-size: 14px; }
-    .shouhou li i {
-      font-size: 64px; }
+      .designers li.designer .btn-yuyue .if {
+        font-size: 12px;
+        -webkit-transform: scale(0.9);
+        margin-left: 35px; }
 
-.new-life {
-  border-top: 1px solid #161312; }
+.loadmore {
+  margin-bottom: 84px; }
+
+@media (max-width: 1366px) {
+  .designers ul.list .designer {
+    padding: 0 15px; }
+  .modal-view .modal-dialog .center-img {
+    /*max-height: 530px;*/
+    height: 400px; } }
 
 i[class*="icon-"] {
   display: inline-block;

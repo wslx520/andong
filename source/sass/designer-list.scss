@@ -1,0 +1,132 @@
+@import "base";
+@import "common";
+
+
+
+body {
+	color: $font;
+}
+
+.big-banner {
+	background-color: #dadad9;
+}
+.designers-wrap {
+	.main-title {
+		.title {
+			font-size: 36px;
+			line-height: 1;
+			margin-top: 68px;
+			margin-bottom: 38px;
+		}
+		.designers-tab {
+			font-size: 14px;
+			line-height: 1;
+			margin-bottom: 54px;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				&.on {
+					em {
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
+.designers {
+	border-top: 1px solid $black;
+	.list {
+		max-width: 1500px;
+		margin: 0 auto 84px;
+	}
+	li.designer {
+		margin-top: 42px;
+		background-color: #dbdbd9;
+		height: 430px;
+		.photo {
+			position: relative;
+			max-width: 630px;
+			width: 40%;
+			padding-left: 1%;
+			display: inline-block;
+			img {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+		.detail {
+			display: inline-block;
+			max-width: 680px;
+			padding-left: 1%;
+		}
+		.desc {
+			text-align: left;
+		}
+		.name {
+			font-size: 30px;
+			line-height: 1;
+			margin-top: 185px;
+		}
+		.info {
+			font-size: 14px;
+			display: inline-block;
+			border: 1px solid $black;
+			margin-top: 15px;
+			margin-bottom: 58px;
+			.zili, .duty {
+				display: inline-block;
+			}
+			.zili {
+				background: $black;
+				color: #fff;
+				padding: 6px 13px;
+			}
+			.duty {
+				padding: 6px 16px;
+			}
+		}
+		.p {
+			line-height: 36px;
+			font-size: 16px;
+		}
+		.btn-yuyue {
+			height: 70px;
+			width: 226px;
+			background-color: transparent;
+			border: 1px solid $black;
+			em {
+				font-size: 18px;
+			}
+			.if {
+				font-size: 12px;
+				-webkit-transform: scale(0.9);
+				margin-left: 35px;
+			}
+		}
+	}
+}
+
+.loadmore {
+	margin-bottom: 84px;
+}
+
+@media (max-width: 1366px) {
+	.designers {
+		ul.list {
+			.designer {
+				padding: 0 15px;
+			}
+		}
+	}
+	.modal-view .modal-dialog .center-img {
+		/*max-height: 530px;*/
+		height: 400px;
+	}
+}
+
+@import "icons";
+@import "pros";
+@import "head";
+@import "foot";

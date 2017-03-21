@@ -240,5 +240,26 @@ body {
 }
 
 
+.loadmore {
+	display: inline-block;
+	margin: auto;
+	color: #fff;
+	width: 390px;
+	height: 69px;
+	background-color: $black;
+	border: none;
+	margin-bottom: 120px;
+	em {
+		font-size: 18px;
+	}
+	em, i {
+		vertical-align: middle;
+	}
+	.if {
+		margin-left: 24px;
+		font-size: 9px;
+		-webkit-transform: scale(0.75);
+	}
+}
 
 @import "font";
