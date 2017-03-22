@@ -1,5 +1,6 @@
 define(function (require, exports, module) {
 	var $ = require('lib/jquery');
+	var head = require('head');
 	var XScroll = require('plugin/XScroll2');
 	var xscroll = XScroll('banner-pics', 
 		{auto:4000,how:1, direct:0,pager:'banner-pager', event: 'click'}

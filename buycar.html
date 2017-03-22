@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>设计师列表</title>
+	<title>购物车</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-	<link rel="stylesheet" href="css/designer-list.css" />
+	<link rel="stylesheet" href="css/buycar.css" />
 </head>
 <body>
 <div class="wrap">
@@ -26,73 +26,95 @@
 				<span class="locate vm"><i class="icon-position"></i><em>房屋所在地</em></span>
 				<em class="line">|</em>
 				<span class="city vm"><em>成都</em><i class="if i-pix-b-drop"></i></span>
-				<span class="login vm">
-					<i class="icon-user"></i><em>登录/注册</em>
+				<span class="login logon vm">
+					<i class="icon-user"></i><em>133 3333 3333 /注册</em>
 				</span>
 		</div>
 	</div>
-	<div class="full-width">
-		<div class="big-banner">
-			<img src="images/designerlist-big-banner.jpg" alt="" />
+	<div class="buycar">
+		<h2>我的购物车</h2>
+		<div class="goods" id="goods">
+			<table class="table-goods">
+				<thead>
+					<tr>
+						<th><input type="checkbox" name="" id="" /></th>
+						<th width="390">商品名称</th>
+						<th>商品参数</th>
+						<th>数量</th>
+						<th>价格</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" name="" id="" /></td>
+						<td>
+							<div class="vm pic">
+								<img src="images/good.jpg" alt="" />
+								<div class="name">									
+									<h3>云团沙发升级版</h3>
+									<span class="xian">现货</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="canshu f12">
+								<ul>
+									<li><b>分类：</b>功能布艺沙发</li>
+									<li><b>尺寸：</b>218厘米×88厘米×88厘米</li>
+								</ul>
+							</div>
+							<div class="dropdown f12">
+							  <button class="btn-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    更多明细
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu guige-drop" aria-labelledby="dLabel">
+							    <li>
+							    	<b class="guige">规格: </b>
+							    	<div>
+							    		三人位：长2120*宽870*高860mm <br />脚踏：长700*宽700*高420mm
+							    	</div>							    	
+							    </li>
+							  </ul>
+							</div>
+						</td>
+						<td>
+							<div class="little-tc">
+								<span class="number-picker">
+									<em>-</em>
+									<em class="num">1</em>
+									<em>+</em>
+								</span>
+								<span class="stock">
+									[库存<em>233</em>件]
+								</span>								
+							</div>
+						</td>
+						<td>
+							<div class="price little-tc">
+								<span class="now">￥1234</span><br />
+								<del class="old">￥2234</del>
+							</div>
+						</td>
+						<td class="tr">
+							<a href="#">删除</a>
+							<br />
+							<b><a href="#">移动至我的收藏</a></b>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
-	<div class="designers-wrap">
-		<div class="designers" id="designers">
-			<ul class="list" id="designer-ul">
-				<li class="designer">
-					<div class="max-w">
-						<div class="desc">
-							<div class="photo">
-								
-								<h2 class="name">舒曼 |  Summer</h2>
-								<span class="info">
-			        				<em class="zili">资历15年</em><em class="duty">设计总监</em>
-			        			</span>
-			        			<img src="images/designer-photo.jpg" alt="" />
-							</div>
-							<div class="detail">
-			        			<p class="p">
-			        				香港室内设计协会执行委员成员，香港室内设计协会专业成员，麦麦廊创办人 （配饰服务）。近年被The Andrew Martin International Award选为全球50名国际著名室内设计师之一，是被“创意中国”评为近年中国三十位顶尖室内设计师中唯一的女性。
-			        			</p>
-			        			<button class="btn-yuyue">
-			        				<em>作品案例</em>
-			        				<i class="if i-pix-r"></i>
-			        			</button>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="designer">
-					<div class="max-w">
-						<div class="desc">
-							<div class="photo">
-								
-								<h2 class="name">舒曼 |  Summer</h2>
-								<span class="info">
-			        				<em class="zili">资历15年</em><em class="duty">设计总监</em>
-			        			</span>
-			        			<img src="images/designer-photo.jpg" alt="" />
-							</div>
-							<div class="detail">
-			        			<p class="p">
-			        				香港室内设计协会执行委员成员，香港室内设计协会专业成员，麦麦廊创办人 （配饰服务）。近年被The Andrew Martin International Award选为全球50名国际著名室内设计师之一，是被“创意中国”评为近年中国三十位顶尖室内设计师中唯一的女性。
-			        			</p>
-			        			<button class="btn-yuyue">
-			        				<em>作品案例</em>
-			        				<i class="if i-pix-r"></i>
-			        			</button>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
+	<div class="buycar-foot tr vm">
+		<span class="yixuan">已选商品 <b>5</b> 件</span>
+		<span class="zongjia">
+			<span class="zong">总价：<span class="price">￥12345</span></span>
+			<span class="yisheng">已节省：<del class="old-price">￥22345</del></span>
+		</span>
+		<button class="btn-primary btn-jiesuan">去结算</button>
 	</div>
-    <div class="group tc">
-    	<button class="loadmore" id="loadmore">
-    		<em>展开加载更多设计师</em><i class="if i-pix-b"></i>
-    	</button>
-    </div>
     <div class="foot-links container-fluid ">
     	<div class="col-md-2">
     		<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
@@ -166,7 +188,7 @@
 <!-- /wrap -->
     <script src="js/lib/esl.js"></script>
     <script>
-    	require(['designer-list']);
+    	require(['buycar']);
     </script>
     <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 </body>

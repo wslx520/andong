@@ -609,92 +609,133 @@ body {
 body {
   color: #221815; }
 
-.big-banner {
-  background-color: #dadad9; }
-
-.designers-wrap .main-title .title {
-  font-size: 36px;
-  line-height: 1;
-  margin-top: 68px;
-  margin-bottom: 38px; }
-
-.designers-wrap .main-title .designers-tab {
-  font-size: 14px;
-  line-height: 1;
-  margin-bottom: 54px; }
-  .designers-wrap .main-title .designers-tab li {
-    display: inline-block;
-    margin: 0 15px; }
-    .designers-wrap .main-title .designers-tab li.on em {
-      font-weight: 700; }
-
-.designers {
-  border-top: 1px solid #161312; }
-  .designers .list {
-    max-width: 1500px;
-    margin: 0 auto 84px; }
-  .designers li.designer {
-    margin-top: 42px;
-    background-color: #dbdbd9;
-    height: 430px; }
-    .designers li.designer .photo {
-      position: relative;
-      max-width: 630px;
-      width: 40%;
-      padding-left: 1%;
+.buycar .table-goods {
+  color: #333;
+  width: 100%; }
+  .buycar .table-goods input[type="checkbox"] {
+    width: 16px;
+    height: 16px; }
+  .buycar .table-goods thead tr {
+    background-color: #e8e8e8; }
+    .buycar .table-goods thead tr th {
+      color: #666;
+      height: 52px;
+      padding: 0 13px; }
+  .buycar .table-goods tbody tr {
+    border-bottom: 1px dotted #e8e8e8; }
+  .buycar .table-goods tbody td {
+    padding: 0 13px;
+    height: 224px; }
+    .buycar .table-goods tbody td .pic .name {
       display: inline-block; }
-      .designers li.designer .photo img {
-        position: absolute;
-        right: 0;
-        top: 0; }
-    .designers li.designer .detail {
-      display: inline-block;
-      max-width: 680px;
-      padding-left: 1%; }
-    .designers li.designer .desc {
-      text-align: left; }
-    .designers li.designer .name {
-      font-size: 30px;
-      line-height: 1;
-      margin-top: 185px; }
-    .designers li.designer .info {
-      font-size: 14px;
-      display: inline-block;
-      border: 1px solid #161312;
-      margin-top: 15px;
-      margin-bottom: 58px; }
-      .designers li.designer .info .zili, .designers li.designer .info .duty {
-        display: inline-block; }
-      .designers li.designer .info .zili {
-        background: #161312;
-        color: #fff;
-        padding: 6px 13px; }
-      .designers li.designer .info .duty {
-        padding: 6px 16px; }
-    .designers li.designer .p {
-      line-height: 36px;
-      font-size: 16px; }
-    .designers li.designer .btn-yuyue {
-      height: 70px;
-      width: 226px;
-      background-color: transparent;
-      border: 1px solid #161312; }
-      .designers li.designer .btn-yuyue em {
-        font-size: 18px; }
-      .designers li.designer .btn-yuyue .if {
-        font-size: 12px;
-        -webkit-transform: scale(0.9);
-        margin-left: 35px; }
+    .buycar .table-goods tbody td h3 {
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 700; }
+    .buycar .table-goods tbody td .xian {
+      color: #666;
+      font-size: 12px; }
+    .buycar .table-goods tbody td .little-tc {
+      text-align: center;
+      width: 120px; }
 
-.loadmore {
-  margin-bottom: 84px; }
+.buycar .dropdown {
+  height: 22px; }
+  .buycar .dropdown button {
+    outline: none;
+    line-height: 1; }
+
+.buycar .guige-drop {
+  min-width: 270px;
+  border-radius: 0;
+  border-color: #e8e8e8;
+  top: 19px; }
+  .buycar .guige-drop li {
+    padding: 16px;
+    font-size: 12px; }
+    .buycar .guige-drop li .guige, .buycar .guige-drop li div {
+      display: inline-block;
+      vertical-align: top; }
+
+.buycar .f12 {
+  font-size: 12px;
+  line-height: 24px; }
+
+.buycar .canshu {
+  color: #333; }
+
+.buycar .btn-drop {
+  width: 92px;
+  height: 22px;
+  border: 1px solid #e8e8e8;
+  background-color: transparent;
+  color: #111; }
+
+.buycar .number-picker {
+  font-size: 0;
+  vertical-align: middle;
+  display: block; }
+  .buycar .number-picker em {
+    height: 36px;
+    cursor: pointer;
+    line-height: 36px;
+    vertical-align: middle;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    display: inline-block;
+    width: 22px;
+    text-align: center; }
+  .buycar .number-picker .num {
+    width: 48px;
+    font-size: 12px;
+    border-left: none;
+    border-right: none; }
+
+.buycar .stock {
+  line-height: 36px; }
+
+.buycar .price {
+  color: #333; }
+  .buycar .price .new {
+    font-size: 16px; }
+  .buycar .price .old {
+    font-size: 12px; }
+
+.buycar-foot {
+  color: #333;
+  height: 185px;
+  padding-top: 54px; }
+  .buycar-foot > span {
+    display: inline-block; }
+  .buycar-foot .yixuan {
+    font-size: 14px;
+    margin-right: 65px; }
+    .buycar-foot .yixuan b {
+      font-size: 24px;
+      font-weight: 400; }
+  .buycar-foot .zongjia {
+    font-size: 14px;
+    margin-right: 35px; }
+    .buycar-foot .zongjia .zong {
+      display: block; }
+    .buycar-foot .zongjia .price {
+      font-size: 24px;
+      color: #ffb400; }
+    .buycar-foot .zongjia .yisheng {
+      font-size: 12px; }
+  .buycar-foot .btn-jiesuan {
+    width: 130px;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    border: none; }
 
 @media (max-width: 1366px) {
-  .designers ul.list .designer {
-    padding: 0 15px; }
-  .modal-view .modal-dialog .center-img {
-    /*max-height: 530px;*/
-    height: 400px; } }
+  .buycar, .buycar-foot {
+    padding: 0 15px; } }
 
 i[class*="icon-"] {
   display: inline-block;

@@ -1,0 +1,174 @@
+@import "base";
+@import "common";
+
+
+
+body {
+	color: $font;
+}
+.buycar {
+	.table-goods {
+		color: #333;
+		width: 100%;
+		input[type="checkbox"] {
+			width: 16px;
+			height: 16px;
+		}
+		thead tr {
+			background-color: #e8e8e8;
+			th {
+				color: #666;
+				height: 52px;
+				padding: 0 13px;
+			}
+		}
+		tbody {
+			tr {
+				border-bottom: 1px dotted #e8e8e8;
+			}
+			td {
+				padding: 0 13px;
+				height: 224px;
+				.pic {
+					.name {
+						display: inline-block;
+					}
+				}
+				h3 {
+					border-bottom: 1px solid #e8e8e8;
+					padding-bottom: 10px;
+					margin-bottom: 10px;
+					font-size: 16px;
+					font-weight: 700;
+				}
+				.xian {
+					color: #666;
+					font-size: 12px;
+				}
+				.little-tc {
+					text-align: center;
+					width: 120px;
+				}
+			}
+		}
+	}
+	.dropdown {
+		height: 22px;
+		button {
+			outline: none;
+			line-height: 1;
+		}
+	}
+	.guige-drop {
+		min-width: 270px;
+		border-radius: 0;
+		border-color: #e8e8e8;
+		top: 19px;
+		li {
+			padding: 16px;
+			font-size: 12px;
+			.guige, div {
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+	.f12 {
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.canshu {
+		color: #333;
+	}
+	.btn-drop {
+		width: 92px;
+		height: 22px;
+		border: 1px solid #e8e8e8;
+		background-color: transparent;
+		color: #111;
+	}
+	.number-picker {
+		font-size: 0;
+		vertical-align: middle;
+		display: block;
+		em {
+			height: 36px;
+			cursor: pointer;
+			line-height: 36px;
+			vertical-align: middle;
+			border: 1px solid #e8e8e8;
+			font-size: 14px;
+			display: inline-block;
+			width: 22px;
+			text-align: center;
+		}
+		.num {
+			width: 48px;
+			font-size: 12px;
+			border-left: none;
+			border-right: none;
+		}
+	}
+	.stock {
+		line-height: 36px;
+	}
+	.price {
+		color: #333;
+		.new {
+			font-size: 16px;
+		}
+		.old {
+			font-size: 12px;
+		}
+	}
+}
+
+.buycar-foot {
+	color: #333;
+	height: 185px;
+	padding-top: 54px;
+	> span {
+		display: inline-block;
+	}
+	.yixuan {
+		font-size: 14px;
+		margin-right: 65px;
+		b {
+			font-size: 24px;
+			font-weight: 400;
+		}
+	}
+	.zongjia {
+		font-size: 14px;
+		margin-right: 35px;
+		.zong {
+			display: block;
+		}
+		.price {
+			font-size: 24px;
+			color: #ffb400;
+		}
+		.yisheng {
+			font-size: 12px;
+		}
+	}
+	.btn-jiesuan {
+		width: 130px;
+		height: 45px;
+		background-color: #000;
+		color: #fff;
+		font-size: 18px;
+		border: none;
+	}
+}
+
+@media (max-width: 1366px) {
+	.buycar, .buycar-foot {
+		padding: 0 15px;
+	}
+}
+
+@import "icons";
+@import "pros";
+@import "head";
+@import "foot";

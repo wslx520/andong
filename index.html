@@ -13,11 +13,56 @@
 			<a href="#"><img src="images/logo.png" alt="logo" /></a>
 		</div>
 		<div class="nav-list">
-			<ul>
-				<li class="on"><a href="index.html">首页</a></li>
-				<li><a href="package.html">套餐</a></li>
+			<ul class="nav-ul">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="#">套餐</a></li>
 				<li><a href="#">荟装</a></li>
-				<li><a href="productlist.html">全球家居</a></li>
+				<li class="on" id="products-menu">
+					<a href="#">全球家居</a>
+					<div class="drop fenlei-menu" id="drop-menu">
+						<ul>
+							<li class="on"><a href="#">
+								<span class="one-i vm"><i class="if i-all"></i></span><span class="name">全部</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-sofa"></i></span><span class="name">沙发</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-chair"></i></span><span class="name">椅</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-table"></i></span><span class="name">桌</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-bed"></i></span><span class="name">床</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-stool"></i></span><span class="name">凳</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-wardrobe"></i></span><span class="name">衣柜</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-locker"></i></span><span class="name">储物柜</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-cup"></i></span><span class="name">餐具</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-light"></i></span><span class="name">灯</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-jewelry"></i></span><span class="name">饰品</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-weiyu"></i></span><span class="name">卫浴</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-other"></i></span><span class="name">其他</span><span class="num">1234</span>
+							</a></li>
+						</ul>
+					</div>
+				</li>
 				<li><a href="#">设计师</a></li>
 				<li><a href="#">HOME+</a></li>
 			</ul>
@@ -119,70 +164,71 @@
                 <i class="if i-pix-r"></i>
             </span>
         </span>
-		<div class="products">
-            <ul>
+    	<div class="products">
+            <ul id="product-ul">
                 <li>
-                      <a href="#">
-                          <img src="images/product1.png" alt="收纳柜" />
+                      <div class="pro">
+                          <img src="images/product1.png" alt="收纳柜">
                           <span class="name">收纳柜</span>
                           <span class="price">￥1234.0</span>
                           <span class="service">免费配送</span>
                           <span class="box">
-                          	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
+                          	<a href="single.html" class="todetail"><em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em></a>
                           	<span class="icons">
-                          		<i class="if i-share"></i>
-								<i class="if i-cart"></i>
-								<i class="if i-share"></i>
+                          		<i class="if i-love" title="收藏"></i>
+								<i class="if i-cart" title="加入购物车"></i>
+								<i class="if i-share" title="分享"></i>
                           	</span>
                           </span>
-                      </a>
-                </li>                <li>
-                      <a href="#">
-                          <img src="images/product1.png" alt="收纳柜" />
-                          <span class="name">收纳柜</span>
-                          <span class="price">￥1234.0</span>
-                          <span class="service">免费配送</span>
-                          <span class="box">
-                          	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
-                          	<span class="icons">
-                          		<i class="if i-share"></i>
-								<i class="if i-cart"></i>
-								<i class="if i-share"></i>
-                          	</span>
-                          </span>
-                      </a>
+                      </div>
                 </li>
                 <li>
-                      <a href="#">
-                          <img src="images/product1.png" alt="收纳柜" />
+                      <div class="pro">
+                          <img src="images/product1.png" alt="收纳柜">
                           <span class="name">收纳柜</span>
                           <span class="price">￥1234.0</span>
                           <span class="service">免费配送</span>
                           <span class="box">
-                          	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
+                          	<a href="single.html" class="todetail"><em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em></a>
                           	<span class="icons">
-                          		<i class="if i-share"></i>
+                          		<i class="if i-love"></i>
 								<i class="if i-cart"></i>
 								<i class="if i-share"></i>
                           	</span>
                           </span>
-                      </a>
+                      </div>
                 </li>
                 <li>
-                      <a href="#">
-                          <img src="images/product1.png" alt="收纳柜" />
+                      <div class="pro">
+                          <img src="images/product1.png" alt="收纳柜">
                           <span class="name">收纳柜</span>
                           <span class="price">￥1234.0</span>
                           <span class="service">免费配送</span>
                           <span class="box">
-                          	<em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em>
+                          	<a href="single.html" class="todetail"><em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em></a>
                           	<span class="icons">
-                          		<i class="if i-share"></i>
+                          		<i class="if i-love"></i>
 								<i class="if i-cart"></i>
 								<i class="if i-share"></i>
                           	</span>
                           </span>
-                      </a>
+                      </div>
+                </li>
+                <li>
+                      <div class="pro">
+                          <img src="images/product1.png" alt="收纳柜">
+                          <span class="name">收纳柜</span>
+                          <span class="price">￥1234.0</span>
+                          <span class="service">免费配送</span>
+                          <span class="box">
+                          	<a href="single.html" class="todetail"><em class="txt">把色彩还原给三餐，一张引人食欲的餐桌。</em></a>
+                          	<span class="icons">
+                          		<i class="if i-love"></i>
+								<i class="if i-cart"></i>
+								<i class="if i-share"></i>
+                          	</span>
+                          </span>
+                      </div>
                 </li>
             </ul>      
         </div>
@@ -401,7 +447,7 @@
     	</div>
 
         <a href="#" class="smallbar-a"><span class="smallbar mid vm">
-            <span class="left vm"><i class="if i-sharemore"></i></span>
+            <span class="left vm"><i class="if i-share"></i></span>
             <span class="right">
                 <em>更多报道</em>
                 <i class="if i-pix-r"></i>

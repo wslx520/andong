@@ -125,6 +125,8 @@ body {
     padding: 0 22px; }
     .smallbar .left em {
       font-size: 18px; }
+    .smallbar .left .if {
+      font-size: 36px; }
   .smallbar .right {
     padding: 0 40px; }
     .smallbar .right em {
@@ -1037,21 +1039,21 @@ i[class*="icon-"] {
     height: 100%;
     display: inline-block;
     font-size: 0; }
-    .head-nav .nav-list ul {
+    .head-nav .nav-list ul.nav-ul {
       height: 100%; }
-    .head-nav .nav-list li {
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      line-height: 122px;
-      padding: 0 29px; }
-    .head-nav .nav-list a {
-      color: #ccc;
-      font-size: 16px;
-      line-height: 1;
-      text-align: center; }
-    .head-nav .nav-list li.on a, .head-nav .nav-list li.active a {
-      color: #fff; }
+      .head-nav .nav-list ul.nav-ul > li {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        line-height: 122px;
+        padding: 0 29px; }
+        .head-nav .nav-list ul.nav-ul > li a {
+          color: #ccc;
+          font-size: 16px;
+          line-height: 1;
+          text-align: center; }
+        .head-nav .nav-list ul.nav-ul > li.on a, .head-nav .nav-list ul.nav-ul > li.active a {
+          color: #fff; }
   .head-nav .info {
     float: right;
     font-size: 0;
@@ -1091,6 +1093,74 @@ i[class*="icon-"] {
       margin: 0 30px 0 25px; }
       .head-nav .info .login i {
         margin-right: 14px; }
+      .head-nav .info .login.logon {
+        width: auto;
+        padding-left: 14px;
+        padding-right: 14px; }
+
+.fenlei-menu {
+  background-color: #F2F2F2;
+  height: 155px;
+  text-align: center;
+  /*border-top: 1px solid #5C5A5A;*/
+  padding-top: 15px; }
+  .fenlei-menu.drop {
+    background-color: #161312;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10001;
+    display: none; }
+    .fenlei-menu.drop .on .one-i i {
+      opacity: 1;
+      color: #fff; }
+    .fenlei-menu.drop .on .num {
+      border-top: 1px solid #5C5A5A;
+      display: block; }
+    .fenlei-menu.drop li a:hover {
+      color: #fff; }
+      .fenlei-menu.drop li a:hover .one-i i {
+        opacity: 1; }
+  .fenlei-menu ul {
+    font-size: 0;
+    margin: auto; }
+  .fenlei-menu li {
+    display: inline-block;
+    margin: 0 18px;
+    vertical-align: top; }
+    .fenlei-menu li a {
+      display: block; }
+    .fenlei-menu li a:hover {
+      text-decoration: none; }
+    .fenlei-menu li .if {
+      font-size: 36px; }
+    .fenlei-menu li .one-i {
+      display: block;
+      height: 70px; }
+      .fenlei-menu li .one-i i {
+        opacity: 0.3; }
+    .fenlei-menu li .two-i {
+      display: block;
+      height: 70px; }
+      .fenlei-menu li .two-i i:first-child {
+        display: inline-block;
+        opacity: 0.3; }
+      .fenlei-menu li .two-i i:last-child {
+        display: none; }
+    .fenlei-menu li .name {
+      font-size: 12px;
+      line-height: 1; }
+    .fenlei-menu li .num {
+      font-size: 12px;
+      display: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      line-height: 1; }
+    .fenlei-menu li.on .one-i i {
+      opacity: 1; }
+    .fenlei-menu li.on .num {
+      border-top: 1px solid #5C5A5A;
+      display: block; }
 
 .foot-links {
   height: 360px;
