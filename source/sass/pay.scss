@@ -16,12 +16,22 @@
 	}
 	.payway {
 		text-align: center;
-		padding: 60px;
+		padding: 60px 0;
+		font-size: 0;
 		.way {
 			display: inline-block;
 			width: 360px;
 			height: 268px;
 			border: 1px solid #e8e8e8;
+			margin: 0 30px;
+			cursor: default;
+			&.on {
+				border-color: #ffb400;
+				.check {
+					border-color: #00ea00;
+					background-color: #00ea00;
+				}
+			}
 		}
 		.check {
 			display: inline-block;
@@ -35,13 +45,30 @@
 			margin-top: 48px;
 			margin-bottom: 24px;
 		}
+		.how {
+			color: #000;
+			font-size: 14px;
+		}
 		.desc {
 			max-width: 220px;
 			margin: 50px auto 0;
+			color: #666;
+			font-size: 12px;
 		}
 	}
 }
 
+.topay {
+	padding-bottom: 80px;
+}
+	.btn-jiesuan {
+		width: 130px;
+		height: 45px;
+		background-color: #000;
+		color: #fff;
+		font-size: 18px;
+		border: none;
+	}
 @media (max-width: 1366px) {
 	.pay {
 		/*padding: 0 15px;*/

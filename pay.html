@@ -83,13 +83,30 @@
 			<p>订单总价：<b class="zongjia">43130</b> 元</p>
 		</div>
 		<div class="payway">
-			<div class="way">
+			<div class="way on">
 				<div class="img vm"><img src="images/pay-alipay.png" alt="" /></div>
 				<span class="check"></span>
 				<input type="hidden" name="alipay" />
 				<p class="how">使用支付宝支付</p>
 				<p class="desc">凡是拥有支付宝账户的用户，都可以进行 网上支付，方便快捷。</p>
 			</div>
+			<div class="way">
+				<div class="img vm"><img src="images/pay-weixin.png" alt="" /></div>
+				<span class="check"></span>
+				<input type="hidden" name="alipay" />
+				<p class="how">使用微信支付</p>
+				<p class="desc">已开通微信账户的用户，都可以进行 网上支付，方便快捷。</p>
+			</div>
+			<div class="way">
+				<div class="img vm"><img src="images/pay-bank.png" alt="" /></div>
+				<span class="check"></span>
+				<input type="hidden" name="alipay" />
+				<p class="how">使用银联支付</p>
+				<p class="desc">只要您开通网上银行服务，足不出户 即可实现快捷准确的帐号充值。</p>
+			</div>
+		</div>
+		<div class="tc topay">
+			<button class="btn-jiesuan">确认支付</button>
 		</div>
 	</div>
     <div class="foot-links container-fluid ">
@@ -165,7 +182,7 @@
 <!-- /wrap -->
     <script src="js/lib/esl.js"></script>
     <script>
-    	require(['buycar']);
+    	require(['pay']);
     </script>
     <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 </body>
