@@ -629,7 +629,8 @@ body {
     margin: 0 30px;
     cursor: default; }
     .pay .payway .way.on {
-      border-color: #ffb400; }
+      border-color: #ffb400;
+      border-width: 2px; }
       .pay .payway .way.on .check {
         border-color: #00ea00;
         background-color: #00ea00; }
