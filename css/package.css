@@ -625,6 +625,7 @@ body {
 .banners {
   position: relative;
   overflow: hidden;
+  width: 100%;
   position: relative; }
   .banners:before {
     display: block;
@@ -880,6 +881,94 @@ body {
 
 .new-life {
   border-top: 1px solid #161312; }
+
+.modal-pinpai .i-close {
+  font-size: 32px; }
+
+.modal-pinpai .modal-content {
+  border-radius: 0;
+  text-align: center; }
+
+.modal-pinpai .modal-header {
+  border-bottom: none; }
+
+.modal-pinpai .title {
+  font-size: 16px; }
+
+.modal-pinpai .class {
+  font-size: 36px;
+  margin-bottom: 52px;
+  line-height: 1; }
+
+.modal-pinpai .select-box {
+  width: 488px;
+  height: 75px;
+  padding: 0 24px; }
+  .modal-pinpai .select-box .prefix {
+    width: 76px;
+    text-align: center; }
+  .modal-pinpai .select-box em, .modal-pinpai .select-box .prefix {
+    font-size: 18px; }
+  .modal-pinpai .select-box em {
+    width: 333px;
+    padding: 0 18px;
+    text-align: left; }
+  .modal-pinpai .select-box .list {
+    width: 374px;
+    right: 0;
+    top: 76px;
+    left: auto; }
+    .modal-pinpai .select-box .list li {
+      line-height: 70px;
+      height: 70px;
+      text-align: left;
+      padding-left: 18px;
+      padding-right: 18px;
+      font-size: 18px; }
+
+.modal-pinpai .modal-footer {
+  text-align: center;
+  border-top: none;
+  padding-bottom: 64px; }
+
+.modal-pinpai .text {
+  width: 488px;
+  height: 75px;
+  border: 1px solid #161312;
+  font-size: 18px;
+  padding: 0 18px; }
+
+.modal-pinpai .one, .modal-pinpai .two {
+  margin-top: 20px; }
+
+.modal-pinpai .two {
+  font-size: 0; }
+  .modal-pinpai .two .text {
+    width: 295px;
+    margin-right: 18px; }
+  .modal-pinpai .two .el {
+    display: inline-block;
+    height: 75px;
+    width: 174px;
+    border: 1px solid #161312; }
+    .modal-pinpai .two .el button {
+      font-size: 18px;
+      background: transparent;
+      width: 100%;
+      height: 100%;
+      border: none; }
+
+.btn-black {
+  width: 488px;
+  height: 75px;
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 0; }
+
+.true-fixed {
+  background-color: #fff; }
 
 i[class*="icon-"] {
   display: inline-block;

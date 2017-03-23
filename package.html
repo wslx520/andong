@@ -76,17 +76,22 @@
 				</span>
 		</div>
 	</div>
-	<div class="max-w top-bar">
-		<div class="fl">
-			<span class="vm"><span class="big">699新生活｜New Life</span><span class="small">一场不苦逼的装修</span></span>
-		</div>
-		<div class="fr vm">
-			<button class="btn-big">
-				<em>立即预定New Life套餐</em>
-				<i class="if i-pix-r"></i>
-			</button>
-		</div>
-	</div>
+
+    <div class="fixed-holder">
+        <div class="true-fixed" id="will-fixed">
+        	<div class="max-w top-bar">
+        		<div class="fl">
+        			<span class="vm"><span class="big">699新生活｜New Life</span><span class="small">一场不苦逼的装修</span></span>
+        		</div>
+        		<div class="fr vm">
+        			<button class="btn-big" data-toggle="modal" data-target="#step2Modal" id="yuding">
+        				<em>立即预定New Life套餐</em>
+        				<i class="if i-pix-r"></i>
+        			</button>
+        		</div>
+        	</div>
+        </div>
+    </div>
 	<div class="banners">
 		<ul class="pics" id="banner-pics">
 			<li>
@@ -361,7 +366,7 @@
 			<h2>988新生活｜New Life</h2>
 			<h4>一场不苦逼的装修 </h4>
 		</div>
-        <span class="smallbar mid vm">
+        <span class="smallbar mid vm" data-toggle="modal" data-target="#step2Modal" id="yuding2">
             <span class="right">
                 <em>立即预定New Life套餐</em>
                 <i class="if i-pix-r"></i>
@@ -419,6 +424,38 @@
     	</div>
     </div>
 </div>
+    <!-- Modal step2 -->
+<div class="modal fade bs-example-modal-sm modal-pinpai" id="step2Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="if i-close"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="title">Step 02 / </div>
+        <h2 class="class">简单填写下您的信息</h2>
+        <form action="">
+            <div class="one"><input type="text" name="" id="" class="text" placeholder="房屋面积" /></div>
+            <div class="one"><input type="text" name="" id="" class="text" placeholder="阁下姓名" /></div>
+            <div class="one"><input type="text" name="" id="" class="text" placeholder="手机号码" /></div>
+            <div class="two vm">
+                <input type="text" name="" id="" class="text" placeholder="短信验证" />
+                <span class="el"><button class="btn-yzm">获取验证码</button></span>
+            </div>
+            <div class="two vm">
+                <input type="text" name="" id="" class="text" placeholder="安全验证" />
+                <span class="el vm"><img src="images/yzm.jpg" alt="" class="yzm" /></span>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-black">提交预约</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <!-- /Modal step2 -->
 <!-- /wrap -->
     <script src="js/lib/esl.js"></script>
     <script>
