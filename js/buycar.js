@@ -4,6 +4,12 @@ define(function (require, exports, module) {
 	var head = require('head');
 	var bs = require('../bootstrap/js/bootstrap.min');
 	
+	$('.check-all').on('change', function (e) {
+		var checked = this.checked;
+		$('.table-goods input:checkbox').prop('checked', checked);
+		$('.check-all').prop('checked', checked);
+	});
+
 	var selects = $('.select-box');
 	selects.on('click', function (e) {
 		selects.not(this).find('.list').hide();

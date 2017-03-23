@@ -6,14 +6,112 @@
 body {
 	color: $font;
 }
-.buycar {
-	.table-goods {
+.address-choice {
+	margin-bottom: 60px;
+	h2 {
+		margin-bottom: 32px;
 		color: #333;
-		width: 100%;
+	}
+
+}
+.addresses {
+	font-size: 0;
+	.addr {
+		display: inline-block;
+		width: 360px;
+		height: 160px;
+		border: 1px solid $black;
+		position: relative;
+		padding: 18px 15px;
+		vertical-align: top;
+		margin-right: 20px;
+		&.on {
+			border-width: 2px;
+		}
+		.icon-pic-select {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		.title {
+			border-bottom: 1px dotted #e8e8e8;
+			padding-bottom: 14px;
+			margin-bottom: 14px;
+			.user {
+				float: left;
+				font-size: 12px;
+				em {
+					font-size: 18px;
+				}
+			}
+			.tel {
+				float: right;
+				font-size: 12px;
+			}
+		}
+		.address {
+			font-size: 14px;
+		}
+		.edit-addr {
+			font-size: 12px;
+			color: #666;
+		}
+		.cross {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			position: relative;
+			background-color: #e8e8e8;
+			> i {
+				width: 12px;
+				height: 12px;
+				display: inline-block;
+				background-color: #fff;
+				position: absolute;
+			}
+			.lt {
+				left: 0;
+				top: 0;
+			}
+			.rt {
+				right: 0;
+				top: 0;
+			}
+			.lb {
+				bottom: 0;
+				left: 0;
+			}
+			.rb {
+				bottom: 0;
+				right: 0;
+			}
+		}
+		.add-new {
+			display: inline-block;
+			width: 100%;
+		}
+		.add-addr {
+				margin-top: 12px;
+			font-size: 14px;
+			color: #666;
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
 		input[type="checkbox"] {
 			width: 16px;
 			height: 16px;
 		}
+.buycar {
+	h2 {
+		margin-bottom: 32px;
+		color: #333;
+	}
+	.table-goods {
+		color: #333;
+		width: 100%;
 		thead tr {
 			background-color: #e8e8e8;
 			th {
@@ -127,8 +225,42 @@ body {
 	color: #333;
 	height: 185px;
 	padding-top: 54px;
-	> span {
-		display: inline-block;
+	&.order {
+		border: 1px solid #e8e8e8;
+		padding-top: 46px;
+	}
+	.todo {
+		label {
+			margin-bottom: 0;
+			margin-right: 24px;
+			* {
+				vertical-align: middle;
+				margin: 0;
+			}
+		}
+	}
+	.address {
+		.jisong {
+			font-size: 12px;
+			font-weight: 700;
+		}
+		.detail {
+			font-size: 12px;
+		}
+		.user {
+			font-size: 12px;
+			em {
+				font-size: 18px;
+			}
+		}
+		.tel {
+			font-size: 12px;
+		}
+	}
+	.count {
+		> span {
+			display: inline-block;
+		}		
 	}
 	.yixuan {
 		font-size: 14px;
@@ -152,6 +284,18 @@ body {
 			font-size: 12px;
 		}
 	}
+	.inorder {
+		.zongjia, .yixuan {
+			margin-right: 0;
+		}
+	}
+}
+.confirm-foot {
+	padding: 14px 0;
+	button {
+		margin-left: 32px;
+	}
+}
 	.btn-jiesuan {
 		width: 130px;
 		height: 45px;
@@ -160,11 +304,14 @@ body {
 		font-size: 18px;
 		border: none;
 	}
-}
-
 @media (max-width: 1366px) {
-	.buycar, .buycar-foot {
-		padding: 0 15px;
+	.address-choice, .buycar, .buycar-foot {
+		/*padding: 0 15px;*/
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.buycar-foot, .confirm-foot  {
+		margin: 0 15px;
 	}
 }
 

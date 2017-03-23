@@ -1,0 +1,59 @@
+@import "base";
+@import "common";
+
+.pay {
+	h2 {
+		margin-bottom: 30px;
+	}
+	.order {
+		background-color: #f7f7f7;
+		padding: 34px 24px;
+		font-size: 12px;
+		.zongjia {
+			font-size: 24px;
+			color: #ffb400;
+		}
+	}
+	.payway {
+		text-align: center;
+		padding: 60px;
+		.way {
+			display: inline-block;
+			width: 360px;
+			height: 268px;
+			border: 1px solid #e8e8e8;
+		}
+		.check {
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border: 1px solid #e8e8e8;
+			border-radius: 50%;
+		}
+		.img {
+			height: 42px;
+			margin-top: 48px;
+			margin-bottom: 24px;
+		}
+		.desc {
+			max-width: 220px;
+			margin: 50px auto 0;
+		}
+	}
+}
+
+@media (max-width: 1366px) {
+	.pay {
+		/*padding: 0 15px;*/
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.buycar-foot, .confirm-foot  {
+		margin: 0 15px;
+	}
+}
+
+@import "icons";
+@import "pros";
+@import "head";
+@import "foot";

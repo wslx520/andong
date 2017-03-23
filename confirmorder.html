@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>购物车</title>
+	<title>确认订单</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="css/buycar.css" />
 </head>
@@ -14,10 +14,10 @@
 		</div>
 		<div class="nav-list">
 			<ul class="nav-ul">
-				<li class="on"><a href="index.html">首页</a></li>
+				<li><a href="index.html">首页</a></li>
 				<li><a href="package.html">套餐</a></li>
 				<li><a href="#">荟装</a></li>
-				<li id="products-menu">
+				<li class="on" id="products-menu">
 					<a href="productlist.html">全球家居</a>
 					<div class="drop fenlei-menu" id="drop-menu">
 						<ul>
@@ -71,13 +71,47 @@
 				<span class="locate vm"><i class="icon-position"></i><em>房屋所在地</em></span>
 				<em class="line">|</em>
 				<span class="city vm"><em>成都</em><i class="if i-pix-b-drop"></i></span>
-				<span class="login vm">
-					<i class="icon-user"></i><em>登录/注册</em>
+				<span class="login logon vm">
+					<i class="icon-user"></i><em>133 3333 3333 / 注册</em>
 				</span>
 		</div>
 	</div>
+	<div class="address-choice">
+		<h2>选择收货地址</h2>
+		<div class="addresses">
+			<div class="addr on">
+				<div class="title clear">
+					<span class="user"><em>周杰伦</em> （收）</span>
+					<span class="tel">13540685638</span>
+				</div>
+				<p class="address">四川省成都市锦江区成龙花园123号13栋3单元5楼 1号</p>
+				<span class="edit-addr">修改</span>
+				<i class="icon-pic-select"></i>
+			</div>
+			<div class="addr">
+				<div class="title clear">
+					<span class="user"><em>周杰伦</em> （收）</span>
+					<span class="tel">13540685638</span>
+				</div>
+				<p class="address">四川省成都市锦江区成龙花园123号13栋3单元5楼 1号</p>
+				<span class="edit-addr">修改</span>
+				<i class="icon-pic-select"></i>
+			</div>
+			<div class="addr new vm">
+				<div class="tc add-new">
+					<span class="cross">
+						<i class="lt"></i>
+						<i class="rt"></i>
+						<i class="lb"></i>
+						<i class="rb"></i>
+					</span>
+					<em class="add-addr">新增收货地址</em>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="buycar">
-		<h2>我的购物车</h2>
+		<h2>确认订单信息</h2>
 		<div class="goods" id="goods">
 			<table class="table-goods">
 				<thead>
@@ -152,21 +186,29 @@
 			</table>
 		</div>
 	</div>
-	<div class="buycar-foot clear vm">
-		<div class="fl vm todo">
-			<label class="vm"><input type="checkbox" name="" id="" class="check-all" /><span>全选</span></label>
-			<a href="#" class="del-all">全部删除</a>
-			<a href="#" class="fav">移至我的收藏</a>
+	<div class="buycar-foot order clear vm">
+		<div class="address fl">
+			<span class="jisong">寄送至： </span><br />
+			<span class="detail">四川成都 锦江双桂路 牛沙横街 59号成龙花园14栋3单元5-1</span>
+
+				<div class="receiver">
+					<span class="user"><em>周杰伦</em> （收）</span>
+					<span class="tel">13540685638</span>
+				</div>
 		</div>
-		<div class="fr vm count">
+		<div class="fr tr inorder">
 			<span class="yixuan">已选商品 <b>5</b> 件</span>
 			<span class="zongjia">
 				<span class="zong">总价：<span class="price">￥12345</span></span>
 				<span class="yisheng">已节省：<del class="old-price">￥22345</del></span>
 			</span>
-			<button class="btn-primary btn-jiesuan">去结算</button>
 			
 		</div>
+	</div>
+	<div class="confirm-foot tr vm">
+		<a href="#">返回购物车</a>
+		<button class=" btn-jiesuan">提交订单</button>
+
 	</div>
     <div class="foot-links container-fluid ">
     	<div class="col-md-2">
