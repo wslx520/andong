@@ -1,0 +1,104 @@
+@import "base";
+@import "common";
+
+.login-register {
+	background: #141111 url(../images/login-bg.jpg) no-repeat center;
+	height: 820px;
+	.login {
+		width: 424px;
+		padding: 40px;
+		display: inline-block;
+		margin: 160px auto 0;
+		background-color: #fff;
+		.tab {
+			/*width: 310px;*/
+			/*margin-left: -5px;*/
+			/*margin-right: -5px;*/
+			> span {
+				width: 50%;
+				display: inline-block;
+				color: #333;
+				font-size: 18px;
+				text-align: center;
+				padding-bottom: 25px;
+				line-height: 1;
+				cursor: pointer;
+				&.on {
+					border-bottom: 2px solid $black;
+				}
+			}
+		}
+	}
+	.from-div {
+		display: none;
+		&.on {
+			display: inline-block;
+		}
+	}
+	.form {
+		.form-group {
+			margin: 0;
+			width: 300px;
+			margin-top: 24px;
+		}
+		.form-control {
+			border-radius: 0;
+			height: 52px;
+			font-size: 14px;
+		}
+		.check {
+			-webkit-appearance: none;
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border: 1px solid #e8e8e8;
+			margin-right: 10px;
+		}
+		.btn-login {
+			width: 163px;
+			height: 45px;
+			background-color: $black;
+			border-radius: 0;
+			color: #fff;
+			font-size: 18px;
+		}
+		.btn-yzm {
+			width: 122px;
+			height: 52px;
+			background-color: #fff;
+			border: 1px solid #e8e8e8;
+			font-size: 12px;
+			margin-left: -15px;
+		}
+		.tip {
+			text-align: left;
+			font-size: 12px;
+			color: #333;
+			line-height: 30px;
+		}
+		i.i-tip {
+			background: url(../images/tip.png) no-repeat;
+			width: 12px;
+			height: 12px;
+			margin-right: 7px;
+			display: inline-block;
+		}
+	}
+}
+
+
+@media (max-width: 1366px) {
+	.pay {
+		/*padding: 0 15px;*/
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.buycar-foot, .confirm-foot  {
+		margin: 0 15px;
+	}
+}
+
+@import "icons";
+@import "pros";
+@import "head";
+@import "foot";

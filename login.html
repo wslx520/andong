@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>登录</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+<div class="wrap">
+	<div class="head-nav vm clear">
+		<div class="logo">
+			<a href="#"><img src="images/logo.png" alt="logo" /></a>
+		</div>
+		<div class="nav-list">
+			<ul class="nav-ul">
+				<li class="on"><a href="index.html">首页</a></li>
+				<li><a href="package.html">套餐</a></li>
+				<li><a href="#">荟装</a></li>
+				<li id="products-menu">
+					<a href="productlist.html">全球家居</a>
+					<div class="drop fenlei-menu" id="drop-menu">
+						<ul>
+							<li class="on"><a href="#">
+								<span class="one-i vm"><i class="if i-all"></i></span><span class="name">全部</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-sofa"></i></span><span class="name">沙发</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-chair"></i></span><span class="name">椅</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-table"></i></span><span class="name">桌</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-bed"></i></span><span class="name">床</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-stool"></i></span><span class="name">凳</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-wardrobe"></i></span><span class="name">衣柜</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-locker"></i></span><span class="name">储物柜</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-cup"></i></span><span class="name">餐具</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-light"></i></span><span class="name">灯</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-jewelry"></i></span><span class="name">饰品</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-weiyu"></i></span><span class="name">卫浴</span><span class="num">1234</span>
+							</a></li>
+							<li><a href="#">
+								<span class="one-i vm"><i class="if i-other"></i></span><span class="name">其他</span><span class="num">1234</span>
+							</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="designer-list.html">设计师</a></li>
+				<li><a href="#">HOME+</a></li>
+			</ul>
+		</div>
+		<div class="info vm">
+				<span class="locate vm"><i class="icon-position"></i><em>房屋所在地</em></span>
+				<em class="line">|</em>
+				<span class="city vm"><em>成都</em><i class="if i-pix-b-drop"></i></span>
+				<span class="login vm">
+					<i class="icon-user"></i><em>登录/注册</em>
+				</span>
+		</div>
+	</div>
+	<div class="login-register tc">
+		<div class="login">
+			<div class="tab" id="tab"><span class="on" data-target="#login-form">登录</span><span data-target="#register-form" class="">注册</span></div>
+			<div id="login-form" class="on from-div" >
+				<form action="" class="form-horizontal form">
+					<div class="form-group">
+					      <input type="text" class="form-control" id="tel" placeholder="手机">
+					  </div>
+					<div class="form-group">
+					      <input type="text" class="form-control" id="pwd" placeholder="密码">
+					  </div>
+					 <div class="form-group">
+						<div class="row">
+						  <div class="col-xs-7">
+						    <input type="text" class="form-control" placeholder="验证码">
+						  </div>
+						  <div class="col-xs-5">
+						    <img src="images/yzm.jpg" alt="" />
+						  </div>
+						</div>
+					</div>
+					 <div class="form-group">
+						<div class="row">
+						  <div class="col-xs-7 tl">
+						    <label class="vm"><input type="checkbox" class="check" name="autologin"><span>一周内自动登录</span></label>
+						  </div>
+						  <div class="col-xs-5 tr">
+						    <a href="#">忘记密码？</a>
+						  </div>
+						</div>
+					</div>
+					 <div class="form-group">
+						<div class="row">
+						  <div class="col-xs-12 tc">
+						  	<button class="btn-login btn-primary btn">登录</button>
+						  </div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="register-form" class="from-div" >
+				<form action="" class="form-horizontal form">
+					<div class="form-group">
+					      <input type="text" class="form-control" id="tel" placeholder="手机号">
+					      <div class="tip vm"><i class="i-tip"></i>手机号码填写错误</div>
+					  </div>
+					 <div class="form-group">
+						<div class="row">
+						  <div class="col-xs-7">
+						    <input type="text" class="form-control" placeholder="验证码">
+						  </div>
+						  <div class="col-xs-5">
+						    <button class="btn-yzm">发送验证码</button>
+						  </div>
+						</div>
+					</div>
+					<div class="form-group">
+					      <input type="text" class="form-control" id="pwd" placeholder="密码">
+					  </div>
+					<div class="form-group">
+					      <input type="text" class="form-control" id="pwd" placeholder="确认密码">
+					  </div>
+					 <div class="form-group">
+						<div class="row">
+						  <div class="col-xs-12 tc">
+						  	<button class="btn-login btn-primary btn">注册</button>
+						  </div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <div class="foot-links container-fluid ">
+    	<div class="col-md-2">
+    		<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
+    	</div>
+    	<div class="col-md-8 links">
+    		<div class="row">
+    			<div class="col-md-2">
+    				<h3>购物支持</h3>
+    				<ul>
+    					<li><a href="#">网上商城</a></li>
+    					<li><a href="#">购物攻略</a></li>
+    					<li><a href="#">在线支付</a></li>
+    					<li><a href="#">常见问题</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-2">
+    				<h3>配送组装</h3>
+    				<ul>
+    					<li><a href="#">送货服务 </a></li>
+    					<li><a href="#">组装服务</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-2">
+    				<h3>售后服务</h3>
+    				<ul>
+    					<li><a href="#">品质保证</a></li>
+    					<li><a href="#">退换货服务</a></li>
+    					<li><a href="#">售后联系</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-6">
+    				<h3>体验店地址</h3>
+    				<ul>
+    					<li>地址：成都市锦江区科华南路中段好百年家居广场</a></li>
+    					<li>电话：4000-511-699</li>
+    					<li>Email：support@wispace.com.cn</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-md-2">
+    		<img class="erweima" src="images/erweima.png" alt="" />
+    	</div>
+    </div>
+    <div class="foot">
+    	<div class="copyright">
+    		Copyright © 2016-2017 wispace.com.cn Inc.All Rights Reserved. 四川妙家科技有限公司<br />
+			版权所有 蜀ICP备14049641号-1 增值电信业务经营许可证：蜀ICP证150098号
+    	</div>
+    </div>
+    <!-- Modal view -->
+<div class="modal fade in bs-example-modal-sm modal-view" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="if i-close"></i></button>
+      </div>
+      <div class="modal-body view-box">
+      	<div class="center-img vm"><img src="images/image-view.jpg" alt="" /></div>
+      	<span class="nav nav-left"><i class="if i-banner-l"></i></span><span class="nav nav-right"><i class="if i-banner-r"></i></span>
+      	<div class="center-info">
+      		<em class="name">新中式 | 简  奢</em>
+      		<span class="pages"><b class="cur">3</b>/<b class="total">5</b></span>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <!-- /Modal view -->
+<!-- /wrap -->
+    <script src="js/lib/esl.js"></script>
+    <script>
+    	require(['login']);
+    </script>
+</body>
+</html>
