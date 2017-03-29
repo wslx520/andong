@@ -40,6 +40,10 @@ gulp.task('default', function(){
     gulp.watch('./source/js/*.js',['js']);
 });
 
+gulp.task('start', ['sass', 'default'], function () {
+    
+})
+
 function swallowError(error) {
     // If you want details of the error in the console
   console.error(error.toString())

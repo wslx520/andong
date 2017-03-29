@@ -1,6 +1,6 @@
 
 define(function (require, exports, module) {
-	var $ = window.jQuery = require('lib/jquery');
+	// var $ = window.jQuery = require('lib/jquery');
 	var head = require('head');
 	var bs = require('../bootstrap/js/bootstrap.min');
 	
